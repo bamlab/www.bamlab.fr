@@ -5,6 +5,13 @@ $font-weight-bold: bold;
 $title-font: 'Alegreya Sans SC', sans-serif;
 $text-font: 'Lato', sans-serif;
 
+.full-width {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+
 body {
     font-family: $text-font;
 }
@@ -25,7 +32,7 @@ h1 {
     background-size: cover;
 
     >div {
-      position: absolute;
+      position: relative;
       top: 25%;
     }
 
