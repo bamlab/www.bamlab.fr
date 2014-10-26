@@ -5,11 +5,8 @@ $font-weight-bold: bold;
 $title-font: 'Alegreya Sans SC', sans-serif;
 $text-font: 'Lato', sans-serif;
 
-.full-width {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: initial;
+.row-wide {
+  min-width: 100%;
 }
 
 body {
