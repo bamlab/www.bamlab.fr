@@ -1,3 +1,4 @@
+$section-padding: 5em;
 $big-padding: 1em;
 $small-padding: 0.25em;
 $font-weight-bold: bold;
@@ -20,7 +21,7 @@ h1 {
 }
 
 .section {
-    padding-top: $big-padding;
+    padding-top: $section-padding;
 }
 
 #intro {
