@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router'])
+angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router', 'oob-effects'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
