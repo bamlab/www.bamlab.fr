@@ -14,7 +14,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="logo - simple.svg">
+   sodipodi:docname="logo - bg white.svg"
+   inkscape:export-filename="/home/marek/Pictures/BAM/logo - bg white.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -32,9 +35,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="443.90852"
-     inkscape:cy="78.487944"
+     inkscape:zoom="1.4"
+     inkscape:cx="60.845746"
+     inkscape:cy="-31.546938"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -75,7 +78,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -83,7 +86,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-902.35221)">
+     transform="matrix(0.99997853,0,0,0.9999488,0,-902.29833)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:19.10000038;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2990"
+       width="450.00967"
+       height="150.00768"
+       x="0"
+       y="902.35455" />
     <path
        style="fill:#ff2a2a;fill-opacity:1"
        d="m 45.71875,0 c 12.481938,0 23.285652,3.74267 32.25,11.09375 8.964292,7.35112 13.5,16.1705 13.5,26.40625 0,4.09428 -0.806109,7.99668 -2.28125,11.71875 11.34723,4.09425 20.64402,10.43992 27.90625,19.09375 7.26223,8.7469 11.03125,18.42471 11.03125,29.21875 0,14.51612 -6.3618,26.8893 -18.84375,37.125 C 96.6859,144.89205 81.588198,150 64,150 l 86,0 L 150,0 45.71875,0 z m -9.0625,29.96875 0,7.53125 0,7.4375 9.0625,0 c 6.127485,0 9.1875,-2.41267 9.1875,-7.4375 0,-5.02483 -3.060015,-7.53125 -9.1875,-7.53125 l -9.0625,0 z m 0,45.03125 0,22.53125 0,22.40625 27.34375,0 c 7.489186,0 13.959616,-2.1265 19.40625,-6.5 5.333218,-4.3734 8.0625,-9.67173 8.0625,-15.90625 0,-6.14145 -2.729261,-11.43975 -8.0625,-15.90625 C 77.959617,77.25154 71.489187,75 64,75 l -18.28125,0 -9.0625,0 z"
