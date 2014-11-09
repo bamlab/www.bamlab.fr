@@ -1,0 +1,38 @@
+div#intro(class=['row', 'row-wide'], oob-full-height)
+  div(class=['small-10', 'columns', 'text-center', 'small-centered'])
+    h1
+      img(src="assets/images/logo.svg", title="bam", alt="bam")
+    h2 State of hybrid mobile performance
+
+div(class=['row', 'section'])
+  div(class=['small-12', 'large-6', 'columns'])
+    h3 Can I use?
+    p
+      | Since we have started our company, our clients were asking us the same question over and over:
+      q Is hybrid aplication fast enough for my application?
+    p
+      | What is undeniable, is that a hybrid application will be slower than an native application. But the real question is: does it matter? Will the user notice the difference?
+    p
+      | We have created the table below trying to answer the question. Note that these are subjective impressions.
+    p
+      | If you have any feedback, feel free to send us an email at <a href="mailto:performance@bamlab.fr">performance@bamlab.fr</a>
+      
+  div(class=['large-6', 'columns', 'show-for-large-up'])
+    img(src="assets/images/devices.svg")
+
+div(class=['row', 'section'])
+  div(class=['small-12', 'columns'])
+    table(ng-table="tableParams", class="table")
+      thead
+        tr
+          th(rowspan=2) Feature
+          th(colspan=1) iOS
+          th(colspan=1) Android
+        tr
+          th iPad 2 - iOS 8
+          th Nexus 4 - Android 4.4
+      tbody
+        tr(ng-repeat="feature in features") 
+          td {{ feature.name }}
+          td {{ feature.ios }}
+          td {{ feature.android }}

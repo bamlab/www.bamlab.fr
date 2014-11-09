@@ -16,10 +16,12 @@ html.no-js(ng-app='homepage')
     // build:css({.tmp,src}) styles/vendor.css 
     link(rel='stylesheet', href='app/main/vendor.css')
     // bower:css 
+    link(rel='stylesheet', href='bower_components/ng-table/ng-table.css')
     // endbower 
     // endbuild 
     // build:css({.tmp,src}) styles/main.css 
     link(rel='stylesheet', href='app/main/main.css')
+    link(rel='stylesheet', href='app/performance/performance.css')
     // endbuild 
     // build:js scripts/modernizr.js 
     script(src='bower_components/modernizr/modernizr.js')
@@ -54,6 +56,7 @@ html.no-js(ng-app='homepage')
     script(src='bower_components/fastclick/lib/fastclick.js')
     script(src='bower_components/jquery.cookie/jquery.cookie.js')
     script(src='bower_components/jquery-placeholder/jquery.placeholder.js')
+    script(src='bower_components/ng-table/ng-table.js')
     // endbower 
     // endbuild 
     // build:js({src,.tmp}) scripts/main.js 
@@ -61,6 +64,7 @@ html.no-js(ng-app='homepage')
     script(src='app/effects/effects.directive.js')
     script(src='app/homepage.js')
     script(src='app/main/main.controller.js')
+    script(src='app/performance/performance.controller.js')
     script(src='components/navbar/navbar.controller.js')
     // inject:partials 
     // angular templates will be automaticaly converted in js and inserted here 

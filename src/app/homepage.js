@@ -7,6 +7,12 @@ angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
+      })
+
+      .state('performance', {
+        url: '/performance',
+        templateUrl: 'app/performance/performance.html',
+        controller: 'PerformanceCtrl'
       });
 
     $urlRouterProvider.otherwise('/');
