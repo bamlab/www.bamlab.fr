@@ -38,6 +38,12 @@ h1 {
   -moz-border-radius: 75px;
 }
 
+#header {
+  img {
+    margin: 1em 0;
+  }
+}
+
 #intro {
     background: url('/assets/images/business-devices_grayed.jpg') 0 0 no-repeat;
     background-size: cover;
