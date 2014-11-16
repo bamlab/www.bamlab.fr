@@ -1,23 +1,46 @@
 div(ng-include="app/nav/navbar.html")
 
-div#intro(class=['row', 'row-wide'], oob-full-height)
-  div(class=['small-10', 'columns', 'text-center', 'small-centered'])
-    h1
-      img(src="assets/images/logo.svg", title="bam", alt="bam")
-    h2 Think business, not device
+div#intro(class="has-bg")
+  .row
+    div(class=['small-12', 'large-6', 'columns'])
+      h1
+        img(src="assets/images/logo.svg", title="bam", alt="bam", width="250")
+      h2 Think business, not device
+      hr.white-divider
+      h3 Nous produisons des applications mobiles multiplateformes
+    div(class=['small-12', 'large-6', 'columns'])
+      h2 Contactez-nous !
+      form.contact-form
+        fieldset
+          .row
+            .row
+              div(class=['large-6', 'columns'])
+                input(id="first-name", class=["radius"], type="text", placeholder="Prénom")
+              div(class=['large-6', 'columns'])
+                input(id="last-name", class=["radius"], type="text", placeholder="Nom")
+            .row
+              .column
+                input(id="email", class=["radius"], type="email", placeholder="Email")
+            .row
+              .column
+                input(id="phone", class=["radius"], type="tel", placeholder="No. tél")
+            .row
+              .column
+                button(type="submit", class=["button", "radius", "form-button"]) Envoyer
 
 div#multiplatform(class=['row', 'section'])
   div(class=['small-12', 'large-6', 'columns'])
-    h3 Nous produisons rapidement des applications mobiles multiplateformes
+    h3 Nous produisons des applications mobiles multiplateformes
     p
-      | La fragmentation des plateformes mobiles a redéfini la manière de développer des applications.
-      | Une nouvelle question se pose aux entreprises désireuses de maximiser l’impact de leurs applications :
-      | comment fournir rapidement à mes utilisateurs des applications opérationnelles sur tous leurs appareils mobiles ? 
+      | La fragmentation des plateformes mobiles a redéfini la manière de développer des applications. Une nouvelle question se pose aux entreprises désireuses de maximiser l’impact de leurs applications : comment fournir rapidement aux utilisateurs des applications opérationnelles sur tous leurs appareils mobiles ? 
+    p
+      | Nous maitrisons la méthode et les technologies qui permettent de s'affranchir des contraintes des terminaux mobiles pour fournir aux utilisateurs des applis accessibles depuis tous les appareils.
   div(class=['large-6', 'columns', 'show-for-large-up'])
     img(src="assets/images/devices.svg")
 
+
 div#about-us(class=['row', 'section'])
-  .intro
+  .section-intro
     h2 Contactez-nous
     p Pour nous contacter envoyez-nous un mail à <a href="mailto:contact@bamlab.fr">contact@bamlab.fr</a>
 

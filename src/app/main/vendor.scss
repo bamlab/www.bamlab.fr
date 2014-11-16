@@ -1,1 +1,6 @@
 @import '../../bower_components/foundation/scss/foundation';
+
+.form-button {
+  @include button;
+  margin-bottom: 0;
+}
