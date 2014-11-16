@@ -5,16 +5,28 @@ div#header
     div(class=['small-12', 'large-12', 'columns', 'text-center'])
       img(src="assets/images/logo_tagline.svg", title="Think business, not device", alt="BAM - Think business, not device", width="230")
 
-div#intro(class="has-bg")
+div#intro(class=['has-bg', 'text-center'])
+  .row
+    div(class=['small-12', 'medium-8', 'medium-centered', 'column'])
+      h1 Nous produisons des applications mobiles multiplateformes
+
+div(class=['section', 'text-center'])
+  .row
+    div(class=['small-12', 'medium-8', 'medium-centered', 'column', 'subsection'])
+      h3.light Développez une applications opérationnelle sur tous les appareils mobiles
+  .row
+    div(class=['small-12', 'medium-4', 'column'])
+      img.system-icon(src='assets/images/icons/ios.png')
+    div(class=['small-12', 'medium-4', 'column'])
+      img.system-icon(src='assets/images/icons/android.png')
+    div(class=['small-12', 'medium-4', 'column'])
+      img.system-icon(src='assets/images/icons/autres.png')
+      
+div(class=['section', 'bg-teal'])
   .row
     div(class=['small-12', 'large-6', 'columns'])
-      h1
-        img(src="assets/images/logo.svg", title="bam", alt="bam", width="250")
-      h2 Think business, not device
-      hr.white-divider
-      h3 Nous produisons des applications mobiles multiplateformes
-    div(class=['small-12', 'large-6', 'columns'])
-      h2 Contactez-nous !
+      .subsection
+        h2 Contactez-nous !
       form.contact-form(ng-submit="sendContactForm()")
         fieldset
           .row
@@ -29,6 +41,9 @@ div#intro(class="has-bg")
             .row
               .column
                 input(id="phone", class=["radius"], type="tel", ng-model="formData.phone", placeholder="No. tél")
+            .row
+              .column
+                textarea(id="message", class=["radius"], ng-model="formData.message", placeholder="Votre projet?")
             .row
               .column
                 button(type="submit", class=["button", "radius", "form-button"]) Envoyer
@@ -46,8 +61,7 @@ div#multiplatform(class=['row', 'section'])
 
 div#about-us(class=['row', 'section'])
   .section-intro
-    h2 Contactez-nous
-    p Pour nous contacter envoyez-nous un mail à <a href="mailto:contact@bamlab.fr">contact@bamlab.fr</a>
+    h2 Notre équipe
 
   div(class=['small-12', 'large-5', 'columns'])
     h3 
@@ -83,4 +97,6 @@ div(class=['section', 'row'])
 
 div#footer(class=['row-wide', 'row'])
   div(class=['small-12', 'large-2', 'column'])
+    p
+      a.light(href="mailto:contact@bamlab.fr") contact@bamlab.fr
     p &copy; BAM 2014

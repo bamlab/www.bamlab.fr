@@ -1,9 +1,7 @@
 $section-padding: 5em;
 $large-padding: 1em;
 $small-padding: 0.25em;
-$font-weight-bold: bold;
 
-$title-font: 'Alegreya Sans SC', sans-serif;
 $text-font: 'Lato', sans-serif;
 
 .row-wide {
@@ -22,12 +20,18 @@ body {
 
 h1 {
     padding: $large-padding 0 $small-padding 0;
-    font-family: $title-font;
-    font-weight: $font-weight-bold;
 }
 
 .section {
-    margin-top: $section-padding;
+  padding: $section-padding 0;
+}
+
+.subsection {
+  padding-bottom: $section-padding / 2;
+}
+
+.bg-teal {
+  background-color: #1abc9c;
 }
 
 .circular {
@@ -44,14 +48,21 @@ h1 {
   }
 }
 
+.light {
+  color: #5b5e61;
+}
+
 #intro {
-    background: url('/assets/images/business-devices_grayed.jpg') 0 0 no-repeat;
     background-size: cover;
-    padding: 6em 0;
+    padding: 7em 0;
 
     >div {
       position: relative;
       top: 25%;
+    }
+
+    h1 {
+      text-transform: uppercase;
     }
 }
 
