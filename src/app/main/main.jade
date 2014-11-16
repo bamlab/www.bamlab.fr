@@ -10,20 +10,20 @@ div#intro(class="has-bg")
       h3 Nous produisons des applications mobiles multiplateformes
     div(class=['small-12', 'large-6', 'columns'])
       h2 Contactez-nous !
-      form.contact-form
+      form.contact-form(ng-submit="sendContactForm()")
         fieldset
           .row
             .row
               div(class=['large-6', 'columns'])
-                input(id="first-name", class=["radius"], type="text", placeholder="Prénom")
+                input(id="first-name", class=["radius"], ng-model="formData.first_name", type="text", placeholder="Prénom")
               div(class=['large-6', 'columns'])
-                input(id="last-name", class=["radius"], type="text", placeholder="Nom")
+                input(id="last-name", class=["radius"], ng-model="formData.last_name" type="text", placeholder="Nom")
             .row
               .column
-                input(id="email", class=["radius"], type="email", placeholder="Email")
+                input(id="email", class=["radius"], type="email", ng-moodel="formData.email", placeholder="Email")
             .row
               .column
-                input(id="phone", class=["radius"], type="tel", placeholder="No. tél")
+                input(id="phone", class=["radius"], type="tel", ng-moodel="formData.phone", placeholder="No. tél")
             .row
               .column
                 button(type="submit", class=["button", "radius", "form-button"]) Envoyer
