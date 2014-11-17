@@ -1,6 +1,7 @@
-$section-padding: 5em;
+$section-padding: 5rem;
 $large-padding: 1em;
 $small-padding: 0.25em;
+$large-font-size: 1.5rem;
 
 $text-font: 'Lato', sans-serif;
 
@@ -23,7 +24,10 @@ h1 {
 }
 
 .section {
-  padding: $section-padding 0;
+    &.has-header {
+        padding-top: $section-padding - $header-top-margin;
+    }
+    padding: $section-padding 0;
 }
 
 .subsection {
@@ -32,6 +36,19 @@ h1 {
 
 .bg-teal {
   background-color: #1abc9c;
+  color: $color-inverted;
+
+  h1, h2, h3, h4, h5 {
+    color: $color-inverted;
+  }
+}
+
+.bg-grey {
+  background-color: #eee;
+}
+
+.bg-dark {
+    background-color: #2c4d81;
 }
 
 .circular {
@@ -62,12 +79,12 @@ h1 {
     }
 
     h1 {
-      text-transform: uppercase;
+        text-shadow: 1px 1px #999;
     }
 }
 
 .has-bg {
-    color:white;
+    color: white;
 
     h1, h2, h3, h4 {
         color: white;
@@ -79,14 +96,11 @@ h1 {
 }
 
 #about-us {
-  background-color: #eee;
-  color: #5b5e61;
   padding: 1em;
 
   h2, h3 {
     text-transform: uppercase;
     font-weight: bold;
-    color: #5b5e61;
   }
 
   h3 img {
@@ -101,7 +115,7 @@ h1 {
 
 #footer {
   padding-top: $large-padding;
-  background-color: #777;
+  background-color: #23303d;
   color: white;
 }
 
@@ -125,4 +139,33 @@ h1 {
 .contact-form input::-moz-placeholder {
 	color: #555;
 	opacity: 1;
+}
+
+.large {
+    font-size: $large-font-size;
+}
+
+@media #{$small-only} {
+  .system-icon {
+    width: 33%;
+    margin-bottom: $large-padding;
+  }
+
+  #intro {
+    background: url('/assets/images/business-devices_small.jpg') 0 0 no-repeat;
+  }
+}
+
+@media #{$medium-up} {
+  #intro {
+    background: url('/assets/images/business-devices_grayed.jpg') 0 0 no-repeat;
+
+    h1 {
+        font-size: 5em;
+    }
+  }
+}
+
+iframe {
+    @include radius($global-radius);
 }
