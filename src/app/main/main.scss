@@ -153,12 +153,14 @@ h1 {
 
   #intro {
     background: url('/assets/images/business-devices_small.jpg') 0 0 no-repeat;
+    background-size: cover;
   }
 }
 
 @media #{$medium-up} {
   #intro {
     background: url('/assets/images/business-devices_grayed.jpg') 0 0 no-repeat;
+    background-size: cover;
 
     h1 {
         font-size: 5em;
