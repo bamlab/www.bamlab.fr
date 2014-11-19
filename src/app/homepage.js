@@ -22,8 +22,8 @@ angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
       var launched = false;
       $window.addEventListener('devtoolschange', function (e) {
           if (e.detail.open && !launched) {
-                console.log("%c" + "      Et BAM! Tu as trouvé!", "background-image: url('http://bamlab.fr/assets/images/logo.png'); background-repeat: no-repeat; background-size: 80px 33px; font-size: 30px; font-weight: bold;");
-                console.log("%c" + "On recrute. Pour postuler - envoi nous un mail à joinus@bamlab.fr.", "font-size: 20px");
+                console.log('%c' + '      Et BAM! Tu as trouvé!', 'background-image: url(\'http://bamlab.fr/assets/images/logo.png\'); background-repeat: no-repeat; background-size: 80px 33px; font-size: 30px; font-weight: bold;');
+                console.log('%c' + 'On recrute. Pour postuler - envoi nous un mail à joinus@bamlab.fr.', 'font-size: 20px');
 
                 launched = true;
           }
