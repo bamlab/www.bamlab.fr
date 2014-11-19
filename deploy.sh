@@ -20,7 +20,7 @@ elif [ $1 == "preprod" ]
                 gulp build
                 echo "Running actual deploy"
                 rsync -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" ./dist/ bam:/var/www/bam-preprod
-                ssh bam 'chown -R www-data:www-data /var/www/bam'
+                ssh bam 'chown -R www-data:www-data /var/www/bam-preprod'
         else
             echo $ERRORSTRING;
         fi
