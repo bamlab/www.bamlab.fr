@@ -19,6 +19,7 @@ angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
   })
 
   .run(function($window) {
+      // add easter eggs 
       var launched = false;
       $window.addEventListener('devtoolschange', function (e) {
           if (e.detail.open && !launched) {
@@ -28,5 +29,7 @@ angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
                 launched = true;
           }
       });
+
+      new Konami('/assets/images/konami.png');
   })
 ;
