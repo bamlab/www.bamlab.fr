@@ -9,4 +9,5 @@ angular.module('homepage')
       $window.alert('Votre message a été bien envoyé, merci!');
       $scope.formData = {};
     };
-  });
+  })
+;
