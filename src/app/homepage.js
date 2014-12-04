@@ -9,16 +9,11 @@ angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
         controller: 'MainCtrl'
     })
 
+    /**
     .state('joinus', {
         url: '/joinus',
         templateUrl: 'app/joinus/joinus.html',
         controller: 'JoinUsCtrl'
-    })
-
-    .state('expertise', {
-        url: '/expertise',
-        templateUrl: 'app/expertise/expertise.html',
-        controller: 'ExpertiseCtrl'
     })
 
     .state('performance', {
@@ -26,6 +21,7 @@ angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
         templateUrl: 'app/performance/performance.html',
         controller: 'PerformanceCtrl'
     });
+   */
 
     $urlRouterProvider.otherwise('/');
 })
