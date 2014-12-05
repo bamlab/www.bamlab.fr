@@ -69,8 +69,13 @@ div#contact(class=['section', 'bg-teal', 'has-header'])
           src="https://www.google.com/maps/embed/v1/place?q=48+Boulevard+des+Batignolles,+Paris,+France&key=AIzaSyATt42KU_QW4oejicTt6L6qqMmKSeFrMeg"
         )
 
-div#mobile-economy
-  div(ng-include="'app/main/mobile-economy.html'")
+#mobile-economy(ng-include="'app/main/mobile-economy.html'")
+
+#mobile-challenges.bg-grey(ng-include="'app/main/mobile-challenges.html'")
+
+#methodology(ng-include="'app/main/methodology.html'")
+
+#tools(ng-include="'app/main/tools.html'")
 
 div#about-us(class=['section', 'bg-dark', 'has-bg'])
   div.row
@@ -79,7 +84,7 @@ div#about-us(class=['section', 'bg-dark', 'has-bg'])
 
     div(class=['small-12', 'large-5', 'columns'])
       h3 
-        img.circular(src="assets/images/us/baptistem.jpg")
+        img.circular(src="assets/images/us/baptistem.jpg", width="150")
         | Baptiste<br>
         | Michel
       p
@@ -95,7 +100,7 @@ div#about-us(class=['section', 'bg-dark', 'has-bg'])
         | Chez BAM il occupe le poste de Directeur Commercial et intervient en coach Lean sur les projets mobiles. 
     div(class=['small-12', 'large-5', 'large-offset-2', 'columns'])
       h3
-        img.circular(src="assets/images/us/marekk.jpg")
+        img.circular(src="assets/images/us/marekk.jpg", width="150")
         | Marek<br>
         | Kalnik
 
@@ -118,7 +123,7 @@ div#about-us(class=['section', 'bg-dark', 'has-bg'])
         | les mieux adaptés aux besoins business du client.
 
 div#footer(class=['row-wide', 'row'])
-  div(class=['small-12', 'large-2', 'column'])
+  div(class=['small-12', 'large-12', 'column'])
     p
-      a.light(href="mailto:contact@bamlab.fr") contact@bamlab.fr
-    p &copy; BAM 2014
+      | &copy; BAM 2014 : <a href="mailto:contact@bamlab.fr">contact@bamlab.fr</a><br>
+      | Icons by <a href="http://voila-infographics.com/">Voilà Inofgraphics</a> and <a href="http://www.freepik.com">Freepik</a>
