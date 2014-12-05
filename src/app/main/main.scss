@@ -191,6 +191,12 @@ h1 {
     vertical-align: middle;
 }
 
+.name > img {
+    width: auto;
+    height: 100%;
+    padding: 5%;
+}
+
 iframe {
     @include radius($global-radius);
 }
