@@ -2,6 +2,7 @@ $section-padding: 5rem;
 $large-padding: 1em;
 $small-padding: 0.25em;
 $large-font-size: 1.5rem;
+$small-font-size: 0.8rem;
 
 $text-font: 'Lato', sans-serif;
 
@@ -152,12 +153,16 @@ h1 {
     opacity: 1;
 }
 
-.large {
+.large, .text-large {
     font-size: $large-font-size;
 
     @media #{$small-only} {
         font-size: 1.2rem;
     }
+}
+
+.text-small {
+    font-size: $small-font-size;
 }
 
 @media #{$small-only} {
