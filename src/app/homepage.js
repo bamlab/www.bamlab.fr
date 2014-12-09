@@ -41,5 +41,7 @@ angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
     });
 
     new Konami('/assets/images/konami.png');
+
+    $(document).foundation();
 })
 ;
