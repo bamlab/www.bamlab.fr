@@ -1,5 +1,4 @@
 'use strict';
-
 angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router', 'oob-effects'])
 .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
@@ -41,7 +40,5 @@ angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
     });
 
     new Konami('/assets/images/konami.png');
-
-    $(document).foundation();
 })
 ;

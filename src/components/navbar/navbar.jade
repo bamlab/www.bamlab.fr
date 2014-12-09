@@ -1,17 +1,13 @@
-img(src="assets/images/logo.svg", title="Think business, not device", alt="BAM - Think business, not device", height="90")
-.sticky
-  nav.top-bar
-    ul.title-area
-      li.name
-      li.toggle-topbar.menu-icon 
-        a(href="#") <span>Menu</span>
-
-    section.top-bar-section
-      ul.right
-        li: a(href="#our-expertise") Notre métier
-        li: a(href="#contact") Contactez-nous
-        li: a(href="#mobile-economy") L’économie des applications
-        li: a(href="#methodology") Notre méthodologie
-        li: a(href="#tools") Nos technologies
-        li: a(href="#about-us") Qui sommes nous ?
-
+.row.row-wide
+  .column.small-12
+    .main-logo
+      img(src="assets/images/logo_tagline.svg", title="Think business, not device", alt="BAM - Think business, not device", height="90")
+  .column.small-12
+    div(data-magellan-expedition="fixed" magellan)
+      dl.sub-nav
+        dd(data-magellan-arrival="our-expertise"): a(href="#our-expertise") Notre métier
+        dd(data-magellan-arrival="contact"): a(href="#contact") Contactez-nous
+        dd(data-magellan-arrival="mobile-economy"): a(href="#mobile-economy") L’économie des applications
+        dd(data-magellan-arrival="methodology"): a(href="#methodology") Notre méthodologie
+        dd(data-magellan-arrival="tools"): a(href="#tools") Nos technologies
+        dd(data-magellan-arrival="about-us"): a(href="#about-us") Qui sommes nous ?
