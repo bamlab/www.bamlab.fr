@@ -13,3 +13,15 @@ $color-inverted: #eee;
   @include button;
   margin-bottom: 0;
 }
+
+.main-logo {
+    margin: 1em 0;
+}
+
+.sub-nav dd {
+    float: none;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
