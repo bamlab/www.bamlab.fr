@@ -5,4 +5,6 @@ angular.module('homepage')
     return function ($scope, $element) {
         jQuery(document).foundation();
     };
-  }]);
+  }])
+;
+
