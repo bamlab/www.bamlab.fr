@@ -4,8 +4,6 @@ $small-padding: 0.25em;
 $large-font-size: 1.5rem;
 $small-font-size: 0.8rem;
 
-$text-font: 'Lato', sans-serif;
-
 .row-wide {
     min-width: 100%;
 }
@@ -14,10 +12,6 @@ fieldset {
     padding: 0;
     margin: 0;
     border: 0;
-}
-
-body {
-    font-family: $text-font;
 }
 
 h1 {
