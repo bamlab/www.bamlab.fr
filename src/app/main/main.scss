@@ -185,6 +185,25 @@ h1 {
     vertical-align: middle;
 }
 
+.top-menu {
+    span.active {
+        a {
+            background-color: #2EAEB7;
+            color: white;
+        }
+    }
+
+    a {
+        display: inline-block;
+        padding: 1em;
+
+        &:hover {
+            background-color: #2EAEB7;
+            color: white;
+        }
+    }
+}
+
 .name > img {
     width: auto;
     height: 100%;
