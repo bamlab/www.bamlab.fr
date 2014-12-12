@@ -3,7 +3,15 @@ angular.module('homepage')
     "use strict";
 
     return function ($scope, $element) {
-        jQuery(document).foundation();
+        jQuery(document).foundation({
+            offcanvas: {
+                close_on_click: true,
+                open_method: 'overlap_single'
+            },
+            topbar: {
+                sticky_class: 'sticky'
+            }
+        });
     };
   }])
 ;

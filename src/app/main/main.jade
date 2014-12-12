@@ -1,97 +1,101 @@
-div(ng-include="'components/navbar/navbar.html'")
+div.off-canvas-wrap(data-offcanvas)
+  div.inner-wrap
+    div(ng-include="'components/navbar/navbar.html'")
 
-div#intro(class=['has-bg', 'text-center'])
-  .row
-    div(class=['small-12', 'medium-12', 'medium-centered', 'column'])
-      h1 Nous produisons des applications mobiles multiplateformes
+    div#intro(class=['has-bg', 'text-center'])
+      .row
+        div(class=['small-12', 'medium-12', 'medium-centered', 'column'])
+          h1 Nous produisons des applications mobiles multiplateformes
 
-#our-expertise(ng-include="'app/main/expertise.html'", data-magellan-destination="our-expertise")
+    #our-expertise(ng-include="'app/main/expertise.html'", data-magellan-destination="our-expertise")
 
-#contact(class=['section', 'bg-teal', 'has-header'], data-magellan-destination="contact")
-  .row
-    .subsection.column
-      h2 Contactez-nous !
-  .row
-    div(class=['small-12', 'large-6', 'columns'])
-      form.contact-form(ng-submit="sendContactForm()")
-        fieldset
-          .row
-            .row
-              div(class=['large-6', 'columns'])
-                input(id="first-name", class=["radius"], ng-model="formData.first_name", type="text", placeholder="Prénom")
-              div(class=['large-6', 'columns'])
-                input(id="last-name", class=["radius"], ng-model="formData.last_name" type="text", placeholder="Nom")
-            .row
-              .column
-                input(id="email", class=["radius"], type="email", ng-model="formData.email", placeholder="Email")
-            .row
-              .column
-                input(id="phone", class=["radius"], type="tel", ng-model="formData.phone", placeholder="No. tél")
-            .row
-              .column
-                textarea(id="message", class=["radius"], ng-model="formData.message", placeholder="Votre projet ?")
-            .row
-              .column
-                button(type="submit", class=["button", "radius", "form-button"]) Envoyer
-    div.small-12.large-6.columns.show-for-medium-up
-      iframe(
-        frameborder="0", style="border:0", width="470", height="345", allowfullscreen="",
-          src="https://www.google.com/maps/embed/v1/place?q=48+Boulevard+des+Batignolles,+Paris,+France&key=AIzaSyATt42KU_QW4oejicTt6L6qqMmKSeFrMeg"
-        )
+    #contact(class=['section', 'bg-teal', 'has-header'], data-magellan-destination="contact")
+      .row
+        .subsection.column
+          h2 Contactez-nous !
+      .row
+        div(class=['small-12', 'large-6', 'columns'])
+          form.contact-form(ng-submit="sendContactForm()")
+            fieldset
+              .row
+                .row
+                  div(class=['large-6', 'columns'])
+                    input(id="first-name", class=["radius"], ng-model="formData.first_name", type="text", placeholder="Prénom")
+                  div(class=['large-6', 'columns'])
+                    input(id="last-name", class=["radius"], ng-model="formData.last_name" type="text", placeholder="Nom")
+                .row
+                  .column
+                    input(id="email", class=["radius"], type="email", ng-model="formData.email", placeholder="Email")
+                .row
+                  .column
+                    input(id="phone", class=["radius"], type="tel", ng-model="formData.phone", placeholder="No. tél")
+                .row
+                  .column
+                    textarea(id="message", class=["radius"], ng-model="formData.message", placeholder="Votre projet ?")
+                .row
+                  .column
+                    button(type="submit", class=["button", "radius", "form-button"]) Envoyer
+        div.small-12.large-6.columns.show-for-medium-up
+          iframe(
+            frameborder="0", style="border:0", width="470", height="345", allowfullscreen="",
+              src="https://www.google.com/maps/embed/v1/place?q=48+Boulevard+des+Batignolles,+Paris,+France&key=AIzaSyATt42KU_QW4oejicTt6L6qqMmKSeFrMeg"
+            )
 
-#mobile-economy(ng-include="'app/main/mobile-economy.html'", data-magellan-destination="mobile-economy")
+    #mobile-economy(ng-include="'app/main/mobile-economy.html'", data-magellan-destination="mobile-economy")
 
-#methodology.bg-grey(ng-include="'app/main/methodology.html'", data-magellan-destination="methodology")
+    #methodology.bg-grey(ng-include="'app/main/methodology.html'", data-magellan-destination="methodology")
 
-#tools(ng-include="'app/main/tools.html'", data-magellan-destination="tools")
+    #tools(ng-include="'app/main/tools.html'", data-magellan-destination="tools")
 
-#about-us(class=['section', 'bg-dark', 'has-bg'], data-magellan-destination="about-us")
-  div.row
-    .section-intro
-      h2 Qui sommes-nous ?
+    #about-us(class=['section', 'bg-dark', 'has-bg'], data-magellan-destination="about-us")
+      div.row
+        .section-intro
+          h2 Qui sommes-nous ?
 
-    div(class=['small-12', 'large-5', 'columns'])
-      h3 
-        img.circular(src="assets/images/us/baptistem.jpg", width="150")
-        | Baptiste<br>
-        | Michel
-      p
-        a(href="http://fr.linkedin.com/in/baptistemichel", target="_blank")
-          img(src="assets/images/icons/linkedin.svg", width="32", height="32")
-      p 
-        | Diplomé de Rouen Business School et de Centrale Paris, Baptiste rejoint Theodo en 2013 en tant que business développeur et coach Agile. Il y développe son expertise Lean du développement de projets web à forte valeur ajoutée. 
+        div(class=['small-12', 'large-5', 'columns'])
+          h3 
+            img.circular(src="assets/images/us/baptistem.jpg", width="150")
+            | Baptiste<br>
+            | Michel
+          p
+            a(href="http://fr.linkedin.com/in/baptistemichel", target="_blank")
+              img(src="assets/images/icons/linkedin.svg", width="32", height="32")
+          p 
+            | Diplomé de Rouen Business School et de Centrale Paris, Baptiste rejoint Theodo en 2013 en tant que business développeur et coach Agile. Il y développe son expertise Lean du développement de projets web à forte valeur ajoutée. 
 
-      p
-        | Certifié Scrum Master, Baptiste a accompagné de nombreux clients, PME et grands comptes, vers l'adoption de l'agilité et la réussite de leurs projets.
+          p
+            | Certifié Scrum Master, Baptiste a accompagné de nombreux clients, PME et grands comptes, vers l'adoption de l'agilité et la réussite de leurs projets.
 
-      p
-        | Chez BAM il occupe le poste de Directeur Commercial et intervient en coach Lean sur les projets mobiles. 
-    div(class=['small-12', 'large-5', 'large-offset-2', 'columns'])
-      h3
-        img.circular(src="assets/images/us/marekk.jpg", width="150")
-        | Marek<br>
-        | Kalnik
+          p
+            | Chez BAM il occupe le poste de Directeur Commercial et intervient en coach Lean sur les projets mobiles. 
+        div(class=['small-12', 'large-5', 'large-offset-2', 'columns'])
+          h3
+            img.circular(src="assets/images/us/marekk.jpg", width="150")
+            | Marek<br>
+            | Kalnik
 
-      p
-        a(href="http://fr.linkedin.com/pub/marek-kalnik/53/b63/740", target="_blank")
-          img(src="assets/images/icons/linkedin.svg", width="32", height="32")
-          &nbsp;
-        a(href="http://github.com/marekkalnik", target="_blank")
-          img(src="assets/images/icons/github.svg", width="32", height="32")
-      p
-        | Diplomé de l'Université de Wroclaw (Pologne), Marek est fort d'une experience de 10 ans dans le 
-        | développement d'applications web et mobiles. Il rejoint Theodo en 2010, où il occupe le poste
-        | d'architecte-manager. En tant que responsable des pôles JavaScript et Symfony2 il participe
-        | à la réalisation des projets en développement Agile.
-      p
-        | Certifié PHP Zend et Symfony2, Marek intervient régulierement à des conférences
-        | et publie des articles où il partage son expertise.
-      p
-        | Chez BAM il occupe le poste de Directeur Technique et est garant des choix techniques
-        | les mieux adaptés aux besoins business du client.
+          p
+            a(href="http://fr.linkedin.com/pub/marek-kalnik/53/b63/740", target="_blank")
+              img(src="assets/images/icons/linkedin.svg", width="32", height="32")
+              &nbsp;
+            a(href="http://github.com/marekkalnik", target="_blank")
+              img(src="assets/images/icons/github.svg", width="32", height="32")
+          p
+            | Diplomé de l'Université de Wroclaw (Pologne), Marek est fort d'une experience de 10 ans dans le 
+            | développement d'applications web et mobiles. Il rejoint Theodo en 2010, où il occupe le poste
+            | d'architecte-manager. En tant que responsable des pôles JavaScript et Symfony2 il participe
+            | à la réalisation des projets en développement Agile.
+          p
+            | Certifié PHP Zend et Symfony2, Marek intervient régulierement à des conférences
+            | et publie des articles où il partage son expertise.
+          p
+            | Chez BAM il occupe le poste de Directeur Technique et est garant des choix techniques
+            | les mieux adaptés aux besoins business du client.
 
-div#footer(class=['row-wide', 'row'])
-  div(class=['small-12', 'large-12', 'column'])
-    p
-      | &copy; BAM 2014 : <a href="mailto:contact@bamlab.fr">contact@bamlab.fr</a><br>
-      | Icons by <a href="http://voila-infographics.com/">Voilà Inofgraphics</a> and <a href="http://www.freepik.com">Freepik</a>
+    div#footer(class=['row-wide', 'row'])
+      div(class=['small-12', 'large-12', 'column'])
+        p
+          | &copy; BAM 2014 : <a href="mailto:contact@bamlab.fr">contact@bamlab.fr</a><br>
+          | Icons by <a href="http://voila-infographics.com/">Voilà Inofgraphics</a> and <a href="http://www.freepik.com">Freepik</a>
+
+    a.exit-off-canvas

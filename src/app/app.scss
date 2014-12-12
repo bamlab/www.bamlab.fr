@@ -6,6 +6,10 @@ $topbar-bg-color: white;
 $topbar-link-color: black;
 $base-font-size: 14px;
 $rem-base: $base-font-size;
+$tabbar-bg: #2EAEB7;
+$off-canvas-bg: #2EAEB7;
+$off-canvas-bg-hover: scale-color($off-canvas-bg, $lightness: -30%);
+$off-canvas-link-color: white;
 
 $color-inverted: #eee;
 
