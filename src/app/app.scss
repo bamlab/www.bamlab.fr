@@ -32,3 +32,9 @@ $color-inverted: #eee;
         margin-left: 0;
     }
 }
+
+@media #{$small-only} {
+    .small-12:not(:last-child) {
+        margin-bottom: 0.3rem;
+    }
+}
