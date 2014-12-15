@@ -213,3 +213,11 @@ h1 {
 iframe {
     @include radius($global-radius);
 }
+
+#tools {
+    .logo {
+        img {
+            padding: 0 0.8rem;
+        }
+    }
+}
