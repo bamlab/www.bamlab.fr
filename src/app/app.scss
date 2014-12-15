@@ -37,4 +37,9 @@ $color-inverted: #eee;
     .small-12:not(:last-child) {
         margin-bottom: 0.3rem;
     }
+
+    .handle {
+        position: relative;
+        top: -2rem;
+    }
 }

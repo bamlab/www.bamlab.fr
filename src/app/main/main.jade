@@ -7,8 +7,10 @@ div.off-canvas-wrap(data-offcanvas)
         div(class=['small-12', 'medium-12', 'medium-centered', 'column'])
           h1 Nous produisons des applications mobiles multiplateformes
 
+    #our-expertise-handle.handle
     #our-expertise(ng-include="'app/main/expertise.html'", data-magellan-destination="our-expertise")
 
+    #contact-handle.handle
     #contact(class=['section', 'bg-teal', 'has-header'], data-magellan-destination="contact")
       .row
         .subsection.column
@@ -41,12 +43,16 @@ div.off-canvas-wrap(data-offcanvas)
               src="https://www.google.com/maps/embed/v1/place?q=48+Boulevard+des+Batignolles,+Paris,+France&key=AIzaSyATt42KU_QW4oejicTt6L6qqMmKSeFrMeg"
             )
 
+    #mobile-economy-handle.handle
     #mobile-economy(ng-include="'app/main/mobile-economy.html'", data-magellan-destination="mobile-economy")
 
+    #methodology-handle.handle
     #methodology.bg-grey(ng-include="'app/main/methodology.html'", data-magellan-destination="methodology")
 
+    #tools-handle.handle
     #tools(ng-include="'app/main/tools.html'", data-magellan-destination="tools")
 
+    #about-us-handle.handle
     #about-us(class=['section', 'bg-dark', 'has-bg'], data-magellan-destination="about-us")
       div.row
         .section-intro
