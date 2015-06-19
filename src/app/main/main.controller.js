@@ -6,7 +6,10 @@ angular.module('homepage')
     $scope.sendContactForm = function() {
       $http.post('http://bamlab.fr/contact', $scope.formData)
         .success(function(data, status, headers, config) {
-            $location.search({form: 'sent'});
+            if (ga) {
+                ga('send', 'event', 'contact', 'form sent');
+            }
+
             $window.alert('Votre message a été bien envoyé, merci!');
             $scope.formData = {};
         });
