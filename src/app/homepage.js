@@ -6,21 +6,7 @@ angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
-    })
-
-    /**
-    .state('joinus', {
-        url: '/joinus',
-        templateUrl: 'app/joinus/joinus.html',
-        controller: 'JoinUsCtrl'
-    })
-
-    .state('performance', {
-        url: '/performance',
-        templateUrl: 'app/performance/performance.html',
-        controller: 'PerformanceCtrl'
     });
-   */
 
     $urlRouterProvider.otherwise('/');
 
@@ -28,7 +14,7 @@ angular.module('homepage', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
 })
 
 .run(function($window) {
-    // add easter eggs 
+    // add easter eggs
     var launched = false;
     $window.addEventListener('devtoolschange', function (e) {
         if (e.detail.open && !launched) {
