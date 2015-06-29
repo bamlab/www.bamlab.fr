@@ -1,0 +1,25 @@
+// brand colors (http://name-of-color.com/)
+$black: #000;
+$white: #fff;
+$blue: #1c3586;
+$light-blue: #2a7fff;
+
+$font-face-sans-serif: 'Open Sans', Arial, Helvetica, sans-serif;
+
+// base variables
+$base-text-color: $blue;
+$base-background-color: $white;
+$base-link-color: $light-blue;
+$base-form-text-color: $blue;
+$base-form-placeholder-color: $blue;
+$base-input-border-color: $black;
+
+$base-font-size: 16px;
+$base-line-height: 1.6875;
+$base-font-family: $font-face-sans-serif;
+$base-text-interval: ($base-font-size * $base-line-height);
+
+$base-min-width: 320px;
+
+// @font-face-serif: 
+// @font-face-sans-serif: 

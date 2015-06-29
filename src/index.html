@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BAM - développement mobile multiplateforme.</title>
+	<meta name="description" content="Nous créons des applications mobiles multiplateformes et se basant sur les méthodologies LEAN et Agiles.">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/all.css">
+</head>
+<body ng-app="homepage">
+	<div id="wrapper">
+		<header id="header">
+			<div class="container">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" alt="BAM" width="386" height="129"></a>
+				</div>
+				<strong class="slogan">Think business, not device</strong>
+				<nav id="nav">
+					<a href="#" class="opener"><span>Menu</span></a>
+					<div class="drop">
+						<ul>
+							<li><a href="#our-expertise">Notre metier</a></li>
+							<li class="active"><a href="#contact">Contactez-nous</a></li>
+							<li><a href="#mobile-economy">L'economie des applications</a></li>
+							<li><a href="#methodology">Notre methodologie</a></li>
+							<li><a href="#tools">Nos technologies</a></li>
+							<li><a href="#about-us">Qui sommes nouse?</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main role="main">
+			<div class="intro" style="background-image:url(images/banner.jpg);">
+				<div class="container">
+					<h1>Nous produisons <br> des applications mobiles <br> multiplateformes</h1>
+				</div>
+			</div>
+			<div class="container">
+				<section class="block" id="our-expertise">
+					<h2>Développez une application opérationnelle sur tous les appareils mobiles</h2>
+					<div class="columns operating-system">
+						<div class="column">
+							<a href="#">
+								<div class="logo-holder">
+									<img src="images/img22.png" alt="IOS" width="89" height="111">
+								</div>
+								<strong class="title">ios</strong>
+							</a>
+						</div>
+						<div class="column">
+							<a href="#">
+								<div class="logo-holder">
+									<img src="images/img23.png" alt="android" width="119" height="141">
+								</div>
+								<strong class="title android">android</strong>
+							</a>
+						</div>
+						<div class="column">
+							<a href="#">
+								<div class="logo-holder">
+									<img src="images/img24.png" alt="windows" width="119" height="141">
+								</div>
+								<strong class="title windows">windows</strong>
+							</a>
+						</div>
+					</div>
+					<div class="columns">
+						<div class="column">
+							<img src="images/img1.jpg" alt="image description" width="348" height="336">
+							<h3><a href="#">Développement <br> multiplateforme</a></h3>
+							<p>Nous maitrisons la méthode et les technologies qui permettent de s'affranchir des contraintes des terminaux mobiles pour fournir aux utilisateurs des applications accessibles depuis tous les appareils.</p>
+						</div>
+						<div class="column">
+							<img src="images/img2.jpg" alt="image description" width="348" height="336">
+							<h3><a href="#">Méthodologie <br> Scrum</a></h3>
+							<p>Nous vous incluons dans une équipe BAM dédiée. Nous priorisons et évaluons ensemble les fonctionnalités clés et vous validez la progression des développements jour après jour. Dès le premier jour des résultats mesurables apparaissent.</p>
+						</div>
+						<div class="column">
+							<img src="images/img3.jpg" alt="image description" width="348" height="336">
+							<h3><a href="#">Priorisation <br> business</a></h3>
+							<p>Nous identifions avec vous les indicateurs de succès du projet. Les développements sont priorisés pour produire une version de l'application qui permette de collecter le maximum d'enseignements auprès de vos utilisateurs.</p>
+						</div>
+					</div>
+				</section>
+				<aside class="block contact-block" id="contact">
+					<h2>Contactez-nous !</h2>
+					<div class="row">
+						<div class="small-12 large-6 columns">
+							<form ng-submit="sendContactForm()" class="contact-form ng-pristine ng-valid ng-valid-email">
+								<fieldset>
+									<div class="row">
+										<div class="row">
+											<div class="large-6 columns">
+												<input id="first-name" ng-model="formData.first_name" type="text" placeholder="Prénom" class="radius ng-pristine ng-untouched ng-valid">
+											</div>
+											<div class="large-6 columns">
+												<input id="last-name" ng-model="formData.last_name" type="text" placeholder="Nom" class="radius ng-pristine ng-untouched ng-valid">
+											</div>
+										</div>
+										<div class="row">
+											<div class="column">
+												<input id="email" type="email" ng-model="formData.email" placeholder="Email" class="radius ng-pristine ng-untouched ng-valid ng-valid-email">
+											</div>
+										</div>
+										<div class="row">
+											<div class="column">
+												<input id="phone" type="tel" ng-model="formData.phone" placeholder="No. tél" class="radius ng-pristine ng-untouched ng-valid">
+											</div>
+										</div>
+										<div class="row">
+											<div class="column">
+												<textarea id="message" ng-model="formData.message" placeholder="Votre projet ?" class="radius ng-pristine ng-untouched ng-valid"></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="column">
+												<button type="submit" class="button radius form-button">Envoyer</button>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="small-12 large-6 columns show-for-medium-up">
+							<iframe frameborder="0" style="border:0" width="470" height="345" allowfullscreen="" src="https://www.google.com/maps/embed/v1/place?q=48+Boulevard+des+Batignolles,+Paris,+France&amp;key=AIzaSyATt42KU_QW4oejicTt6L6qqMmKSeFrMeg"></iframe>
+						</div>
+					</div>
+				</aside>
+				<section class="block service-block" id="mobile-economy">
+					<div class="columns">
+						<div class="column">
+							<img src="images/img4.jpg" alt="image description" width="535" height="336">
+							<h3><a href="#">Les applications mobiles sont partout et elles changent tout.</a></h3>
+							<p>L’économie des applications révolutionne notre manière de travailler. BAM produit des applications mobiles pour résoudre les nouvelles problématiques de mobilité en entreprise. Tous les secteurs profitent des applications mobiles pour améliorer l'expérience client, et renforcer leur productivité.</p>
+						</div>
+						<div class="column">
+							<img src="images/img5.jpg" alt="image description" width="535" height="336">
+							<h3><a href="#">Le traffic sur appareils mobiles est supérieur au desktop.</a></h3>
+							<p>En septembre 2014 le traffic mobile a depassé celui du desktop. Les devices mobiles deviennent le moyen principal d'utilisation des sites web.</p>
+						</div>
+						<div class="column">
+							<img src="images/img6.jpg" alt="image description" width="535" height="336">
+							<h3><a href="#">La vitesse: le facteur clé de succès dans l’économie des applications</a></h3>
+							<p>La vitesse est le facteur clé de succès dans l’économie des applications où les attentes des utilisateurs et l’environnement business évoluent en permanence.</p>
+							<p>Etre capable de produire des applications fiables vite suppose d’adopter un processus agile où la conception, le développement et les tests sont intégré dans un même processus.</p>
+						</div>
+						<div class="column">
+							<img src="images/img7.jpg" alt="image description" width="535" height="336">
+							<h3><a href="#">Les utilisateurs mobiles utilisent des device variés</a></h3>
+							<p>120000 modèles différents de smartphones et tablettes disponibles en 2013</p>
+							<p>250 tailles d'écran différentes</p>
+						</div>
+					</div>
+				</section>
+				<section class="block adopter-block" id="methodology">
+					<h2>Adopter une démarche Scrum et Lean pour aller vite</h2>
+					<div class="columns">
+						<div class="column">
+							<img src="images/img8.jpg" alt="image description" width="348" height="336">
+							<h3><a href="#">Porteur du projet</a></h3>
+							<p>En tant que porteur du projet, vous êtes intégrée à l'équipe BAM. Vous lui transmettez votre vision en priorisant et validant les fonctionnalités à développer. L'équipe se réunit chaque semaine pour planifier les développements.</p>
+						</div>
+						<div class="column">
+							<img src="images/img9.jpg" alt="image description" width="348" height="336">
+							<h3><a href="#">L’équipe technique</a></h3>
+							<p>L’équipe technique composée de 2 à 3 développeurs BAM est en charge de la réussite du projet. Elle échange au quotidien avec le directeur produit pour livrer des fonctionnalités à forte valeur ajoutée business.</p>
+						</div>
+						<div class="column">
+							<img src="images/img10.jpg" alt="image description" width="348" height="336">
+							<h3><a href="#">Le coach agile</a></h3>
+							<p>Le coach agile BAM adapte la méthodologie au contexte du projet. Il apporte un focus très fort sur la définition et le suivi des indicateurs de succès du projet.</p>
+						</div>
+					</div>
+				</section>
+				<section class="block capitaliser-block" id="tools">
+					<h2>Capitaliser sur les technologies web pour développer des applications cross plateformes</h2>
+					<div class="columns">
+						<div class="column">
+							<div class="logo-holder">
+								<a href="#"><img src="images/img11.png" alt="angular js by google" width="340" height="89"></a>
+							</div>
+							<h3>Angular</h3>
+							<p>Angular est le framework JavaScript leader. Soutenu par Google il permet de capitaliser sur des briques logicielles déjà créées pour des développements d’applications plus rapides et pérennes.</p>
+						</div>
+						<div class="column">
+							<div class="logo-holder"></div>
+							<h3>Apache Cordova</h3>
+							<p>Apache Cordova (aussi appelé Phonegap) est une plateforme qui permet de développer des applications mobiles natives pour Android, iOS, Windows Phone…en HTML, CSS et JavaSript. La BBC, Decathlon, Wikipedia et des startups comme Healthtap ont déjà adopté cette solution.</p>
+						</div>
+						<div class="column">
+							<div class="logo-holder">
+								<a href="#"><img src="images/img12.png" alt="html5 et css3" width="285" height="148"></a>
+							</div>
+							<h3>HTML5 et CSS3</h3>
+							<p>HTML5/CSS3 permet aux développeurs web de produire des applications mobile utilisant les fonctionnalités avancées de votre téléphone comme la géolocalisation, la navigation offline et le drag and drop. Le HTML5 est prêt pour développer des applications mobiles performantes cross-plateformes.</p>
+						</div>
+						<div class="column">
+							<div class="logo-holder">
+								<a href="#"><img src="images/img13.png" alt="ionic" width="285" height="112"></a>
+							</div>
+							<h3>Ionic</h3>
+							<p>Avec la sortie de Ionic, framework de développement mobile basé sur Angular et HTML5, il est maintenant possible de développer des applications mobiles multi-plateformes sur des fondations 100% open-source.</p>
+						</div>
+						<div class="column grey">
+							<div class="logo-holder">
+								<a href="#"><img src="images/img14.png" alt="linkedin" width="121" height="121"></a>
+							</div>
+							<h3>Other tool</h3>
+							<p>Sample text...</p>
+						</div>
+						<div class="column grey">
+							<div class="logo-holder">
+								<a href="#"><img src="images/img15.png" alt="twitter" width="123" height="123"></a>
+							</div>
+							<h3>Other tool</h3>
+							<p>Sample text...</p>
+						</div>
+					</div>
+				</section>
+				<section class="block qui-sommes-block" id="about-us">
+					<h2>Qui sommes-nous?</h2>
+					<div class="columns">
+						<div class="column">
+							<div class="image-holder">
+								<div class="image">
+									<a href="#"><img src="images/img16.jpg" alt="Baptiste Michel" width="347" height="335"></a>
+								</div>
+								<ul class="social-networks">
+									<li><a href="#">Linkedin</a></li>
+								</ul>
+							</div>
+							<h3><a href="#">Baptiste Michel</a></h3>
+							<p>Diplomé de Rouen Business School et de Centrale Paris, Baptiste rejoint Theodo en 2013 en tant que business développeur et coach Agile. Il y développe son expertise Lean du développement de projets web à forte valeur ajoutée.</p>
+							<p>Certifié Scrum Master, Baptiste a accompagné de nombreux clients, PME et grands comptes, vers l'adoption de l'agilité et la réussite de leurs projets.</p>
+							<p>Chez BAM il occupe le poste de Directeur Commercial et intervient en coach Lean sur les projets mobiles.</p>
+						</div>
+						<div class="column">
+							<div class="image-holder">
+								<div class="image">
+									<a href="#"><img src="images/img17.jpg" alt="Marek Kalnik" width="347" height="335"></a>
+								</div>
+								<ul class="social-networks">
+									<li><a href="#">Linkedin</a></li>
+									<li><a href="#" class="github">Github</a></li>
+								</ul>
+							</div>
+							<h3><a href="#">Marek Kalnik</a></h3>
+							<p>Diplomé de l'Université de Wroclaw (Pologne), Marek est fort d'une experience de 10 ans dans le développement d'applications web et mobiles. Il rejoint Theodo en 2010, où il occupe le poste d'architecte-manager. En tant que responsable des pôles JavaScript et Symfony2 il participe à la réalisation des projets en développement Agile.</p>
+							<p>Certifié PHP Zend et Symfony2, Marek intervient régulierement à des conférences et publie des articles où il partage son expertise.</p>
+							<p>Chez BAM il occupe le poste de Directeur Technique et est garant des choix techniques les mieux adaptés aux besoins business du client.</p>
+						</div>
+					</div>
+					<!-- <div class="columns profile-block">
+						<div class="column">
+							<a href="#"><img src="images/img18.jpg" alt="Baptiste Michel" width="209" height="209"></a>
+							<a href="#"><strong class="name">Baptiste Michel</strong></a>
+						</div>
+						<div class="column">
+							<a href="#"><img src="images/img19.jpg" alt="Baptiste Michel" width="209" height="209"></a>
+							<a href="#"><strong class="name">Baptiste Michel</strong></a>
+
+						</div>
+						<div class="column">
+							<a href="#"><img src="images/img20.jpg" alt="Marek Kalnik" width="209" height="209"></a>
+							<a href="#"><strong class="name">Marek Kalnik</strong></a>
+						</div>
+						<div class="column">
+							<a href="#"><img src="images/img21.jpg" alt="Marek Kalnik" width="209" height="209"></a>
+							<a href="#"><strong class="name">Marek Kalnik</strong></a>
+						</div>
+					</div> -->
+				</section>
+			</div>
+		</main>
+	</div>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-56198126-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script src="js/vendors.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
