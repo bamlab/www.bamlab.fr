@@ -55,8 +55,7 @@ gulp.task('html', ['styles', 'scripts', 'partials'], function () {
   var cssFilter = $.filter('**/*.css');
   var assets;
 
-  return gulp.src('src/*.jade')
-    .pipe($.jade({pretty: true}))
+  return gulp.src('src/index.html')
     .pipe($.inject(gulp.src('.tmp/{app,components}/**/*.js'), {
       read: false,
       starttag: '<!-- inject:partials -->',

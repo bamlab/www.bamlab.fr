@@ -17,6 +17,7 @@ $mq-breakpoints: (
 @import "base/markup-variables";
 @import "base/markup-mixins";
 @import "base/base-reset";
+@import "base/form";
 
 #wrapper{
 	overflow: hidden;
@@ -220,7 +221,7 @@ $mq-breakpoints: (
 	color: #fff;
   background-size: cover;
   padding: 7em 0;
-  
+
 
 	@include breakpoint($tablet) {
 		background-size: cover;
@@ -315,7 +316,7 @@ $mq-breakpoints: (
 
 .columns{
 	overflow: hidden;
-	margin: 0 -40px 0 0;
+	margin: 0 0 0 0;
 	font-style: 0;
 	line-height: 0;
 	letter-spacing: -5px;

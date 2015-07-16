@@ -6,7 +6,13 @@
 	<title>BAM - développement mobile multiplateforme.</title>
 	<meta name="description" content="Nous créons des applications mobiles multiplateformes et se basant sur les méthodologies LEAN et Agiles.">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-	<link media="all" rel="stylesheet" href="css/all.css">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css({.tmp,src}) styles/app.css -->
+	<link media="all" rel="stylesheet" href="app/css/all.css">
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/ng-table/ng-table.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
 </head>
 <body ng-app="homepage">
 	<div id="wrapper">
@@ -87,44 +93,44 @@
 				<aside class="block contact-block" id="contact">
 					<h2>Contactez-nous !</h2>
 					<div class="row">
-						<div class="small-12 large-6 columns">
+						<div class="size-adapt columns">
 							<form ng-submit="sendContactForm()" class="contact-form ng-pristine ng-valid ng-valid-email">
 								<fieldset>
 									<div class="row">
-										<div class="row">
-											<div class="large-6 columns">
+										<div class="row row-form">
+											<div class="columns column-name first-name">
 												<input id="first-name" ng-model="formData.first_name" type="text" placeholder="Prénom" class="radius ng-pristine ng-untouched ng-valid">
 											</div>
-											<div class="large-6 columns">
+											<div class="columns column-name">
 												<input id="last-name" ng-model="formData.last_name" type="text" placeholder="Nom" class="radius ng-pristine ng-untouched ng-valid">
 											</div>
 										</div>
-										<div class="row">
-											<div class="column">
+										<div class="row row-form">
+											<div class="columns full-column">
 												<input id="email" type="email" ng-model="formData.email" placeholder="Email" class="radius ng-pristine ng-untouched ng-valid ng-valid-email">
 											</div>
 										</div>
-										<div class="row">
-											<div class="column">
+										<div class="row row-form">
+											<div class="columns full-column">
 												<input id="phone" type="tel" ng-model="formData.phone" placeholder="No. tél" class="radius ng-pristine ng-untouched ng-valid">
 											</div>
 										</div>
-										<div class="row">
-											<div class="column">
+										<div class="row row-form">
+											<div class="columns">
 												<textarea id="message" ng-model="formData.message" placeholder="Votre projet ?" class="radius ng-pristine ng-untouched ng-valid"></textarea>
 											</div>
 										</div>
 										<div class="row">
-											<div class="column">
-												<button type="submit" class="button radius form-button">Envoyer</button>
+											<div class="columns">
+												<button type="submit" class="radius button-form">Envoyer</button>
 											</div>
 										</div>
 									</div>
 								</fieldset>
 							</form>
 						</div>
-						<div class="small-12 large-6 columns show-for-medium-up">
-							<iframe frameborder="0" style="border:0" width="470" height="345" allowfullscreen="" src="https://www.google.com/maps/embed/v1/place?q=48+Boulevard+des+Batignolles,+Paris,+France&amp;key=AIzaSyATt42KU_QW4oejicTt6L6qqMmKSeFrMeg"></iframe>
+						<div class="size-adapt columns show-for-medium-up">
+							<iframe frameborder="0" style="border:0" width="549" height="356" allowfullscreen="" src="https://www.google.com/maps/embed/v1/place?q=48+Boulevard+des+Batignolles,+Paris,+France&amp;key=AIzaSyATt42KU_QW4oejicTt6L6qqMmKSeFrMeg"></iframe>
 						</div>
 					</div>
 				</aside>
@@ -275,8 +281,6 @@
 			</div>
 		</main>
 	</div>
-	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/jquery.main.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -286,7 +290,41 @@
 		ga('create', 'UA-56198126-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	<script src="js/vendors.js"></script>
-	<script src="js/app.js"></script>
+
+	<!-- build:js scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/modernizr/modernizr.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="bower_components/angular-touch/angular-touch.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="bower_components/lodash/dist/lodash.compat.js"></script>
+	<script src="bower_components/restangular/dist/restangular.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/fastclick/lib/fastclick.js"></script>
+	<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+	<script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="bower_components/ng-table/ng-table.js"></script>
+	<script src="bower_components/devtools-detect/devtools-detect.js"></script>
+	<!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js({src,.tmp}) scripts/main.js -->
+	<script src="app/js/jquery-1.11.2.min.js"></script>
+	<script src="app/js/jquery.main.js"></script>
+	<script src='app/lib/konami.js')></script>
+  <script src='app/effects/effects.js')></script>
+  <script src='app/effects/effects.directive.js')></script>
+  <script src='app/homepage.js')></script>
+  <script src='app/main/main.controller.js')></script>
+  <script src='app/main/magellan.directive.js')></script>
+  <script src='app/expertise/expertise.controller.js')></script>
+  <script src='app/performance/performance.controller.js')></script>
+  <script src='components/navbar/navbar.controller.js')></script>
+  <!-- inject:partials -->
+  <!-- angular templates will be automaticaly converted in js and inserted here -->
+  <!-- endinject -->
+  <!-- endbuild -->
 </body>
 </html>
