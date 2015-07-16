@@ -5,7 +5,6 @@
 }
 
 .contact-form input {
-    color:#000;
     margin-bottom:18px;
     height:40px;
 }
@@ -80,4 +79,13 @@
 
 .full-column {
   width: 100%;
+}
+
+.padding-map{
+  padding-left: 30px;
+  @include breakpoint($tablet){
+    padding-left: 0px;
+    text-align: center;
+    padding-top: 30px;
+  }
 }

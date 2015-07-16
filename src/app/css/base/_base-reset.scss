@@ -40,7 +40,7 @@ input,
 textarea,
 select {
 	font: 100% $base-font-family;
-	color: $base-form-text-color;
+	color: #ccc;
 	vertical-align: middle;
 }
 
@@ -82,7 +82,7 @@ textarea {
 	border-width: 1px;
 	border-style: solid;
 	&:focus {
-		border-color: darken($base-input-border-color, 30%);
+		border-color: darken(#ccc, 30%);
 		//outline: none;
 	}
 }

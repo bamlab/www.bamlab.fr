@@ -720,7 +720,7 @@ $mq-breakpoints: (
 		}
 
 		a{
-			background: url(../images/sprite.png) no-repeat;
+			background: url(../../images/sprite.png) no-repeat;
 			width: 61px;
 			height: 61px;
 			@include hide-text;
@@ -799,4 +799,12 @@ $mq-breakpoints: (
 			text-decoration: none;
 		}
 	}
+}
+
+#footer {
+  padding-top: 1em;
+  background-color: #23303d;
+  color: #fff;
+  font-size: 12px;
+  padding-bottom: 10px
 }

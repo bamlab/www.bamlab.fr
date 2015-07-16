@@ -79,7 +79,7 @@ gulp.task('html', ['styles', 'scripts', 'partials'], function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src('src/assets/images/**/*')
+  return gulp.src('src/images/*')
   /**
     .pipe($.cache($.imagemin({
       optimizationLevel: 3,
@@ -87,7 +87,7 @@ gulp.task('images', function () {
       interlaced: true
     })))
    */
-    .pipe(gulp.dest('dist/assets/images'))
+    .pipe(gulp.dest('dist/images'))
     .pipe($.size());
 });
 
