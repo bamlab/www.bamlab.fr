@@ -38,8 +38,8 @@
 			</div>
 		</header>
 		<main role="main">
-			<div class="intro" style="background-image:url(images/banner.jpg);">
-				<div class="container">
+			<div class="intro" >
+				<div class="container" style="background-image:url(images/banner.jpg); background-size: contain; max-width:1664px; background-position: 50% 50%; background-repeat: no-repeat;">
 					<h1>Nous produisons <br> des applications mobiles <br> multiplateformes</h1>
 				</div>
 			</div>
@@ -86,7 +86,7 @@
 				</section>
 				<aside class="block contact-block" id="contact">
 					<h2>Contactez-nous !</h2>
-					<div class="row">
+					<div ng-controller="MainCtrl as main" class="row">
 						<div class="size-adapt columns">
 							<form ng-submit="sendContactForm()" class="contact-form ng-pristine ng-valid ng-valid-email">
 								<fieldset>
@@ -302,13 +302,13 @@
 	<script src="app/js/jquery.main.js"></script>
 	<script src='app/lib/konami.js')></script>
   <script src='app/effects/effects.js')></script>
-  <script src='app/effects/effects.directive.js')></script>
+  <script src='app/effects/effects.directive.js'></script>
   <script src='app/homepage.js')></script>
-  <script src='app/main/main.controller.js')></script>
-  <script src='app/main/magellan.directive.js')></script>
-  <script src='app/expertise/expertise.controller.js')></script>
-  <script src='app/performance/performance.controller.js')></script>
-  <script src='components/navbar/navbar.controller.js')></script>
+  <script src='app/main/main.controller.js'></script>
+  <script src='app/main/magellan.directive.js'></script>
+  <script src='app/expertise/expertise.controller.js'></script>
+  <script src='app/performance/performance.controller.js'></script>
+  <script src='components/navbar/navbar.controller.js'></script>
   <!-- inject:partials -->
   <!-- angular templates will be automaticaly converted in js and inserted here -->
   <!-- endinject -->
