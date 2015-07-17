@@ -81,11 +81,15 @@
   width: 100%;
 }
 
-.padding-map{
+.padding-map {
   padding-left: 30px;
   @include breakpoint($tablet){
     padding-left: 0px;
     text-align: center;
     padding-top: 30px;
   }
+}
+
+.button[disabled] {
+  background-color: rgba(0,0,0,0.1);
 }

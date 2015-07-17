@@ -88,35 +88,35 @@
 					<h2>Contactez-nous !</h2>
 					<div ng-controller="MainCtrl as main" class="row">
 						<div class="size-adapt columns">
-							<form ng-submit="sendContactForm()" class="contact-form ng-pristine ng-valid ng-valid-email">
+							<form name="form" ng-submit="sendContactForm()" class="contact-form" novalidate>
 								<fieldset>
 									<div class="row">
 										<div class="row row-form">
 											<div class="columns column-name first-name">
-												<input id="first-name" ng-model="formData.first_name" type="text" placeholder="Prénom" class="radius ng-pristine ng-untouched ng-valid">
+												<input id="first-name" ng-model="formData.first_name" type="text" placeholder="Prénom" class="radius">
 											</div>
 											<div class="columns column-name">
-												<input id="last-name" ng-model="formData.last_name" type="text" placeholder="Nom" class="radius ng-pristine ng-untouched ng-valid">
+												<input id="last-name" ng-model="formData.last_name" type="text" placeholder="Nom" class="radius">
 											</div>
 										</div>
 										<div class="row row-form">
 											<div class="columns full-column">
-												<input id="email" type="email" ng-model="formData.email" placeholder="Email" class="radius ng-pristine ng-untouched ng-valid ng-valid-email">
+												<input id="email" type="email" ng-model="formData.email" placeholder="Email" class="radius" required>
 											</div>
 										</div>
 										<div class="row row-form">
 											<div class="columns full-column">
-												<input id="phone" type="tel" ng-model="formData.phone" placeholder="No. tél" class="radius ng-pristine ng-untouched ng-valid">
+												<input id="phone" type="tel" ng-model="formData.phone" placeholder="No. tél" class="radius">
 											</div>
 										</div>
 										<div class="row row-form">
 											<div class="columns">
-												<textarea id="message" ng-model="formData.message" placeholder="Votre projet ?" class="radius ng-pristine ng-untouched ng-valid"></textarea>
+												<textarea id="message" ng-model="formData.message" placeholder="Votre projet ?" class="radius"></textarea>
 											</div>
 										</div>
 										<div class="row">
 											<div class="columns">
-												<button type="submit" class="radius button-form">Envoyer</button>
+												<button type="submit" class="radius button button-form" ng-disabled="!formData.email && !formData.phone">Envoyer</button>
 											</div>
 										</div>
 									</div>

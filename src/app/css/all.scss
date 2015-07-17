@@ -220,7 +220,7 @@ $mq-breakpoints: (
 	margin: 0 0 115px;
 	color: #fff;
   background-size: cover;
-  padding: 0 0;
+  padding-bottom: 30px;
 
 
 	@include breakpoint($tablet) {
@@ -232,7 +232,7 @@ $mq-breakpoints: (
 	}
 
 	.container{
-		padding: 234px 0;
+		padding: 200px 0;
 
 		@include breakpoint($tablet) {
 			padding: 150px 0;
