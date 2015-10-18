@@ -79,7 +79,7 @@ $mq-breakpoints: (
 
 	ul{
 		@extend %listreset;
-		font: 600 23px/26px $base-font-family;
+		font: 600 21px/26px $base-font-family;
 
 		@include breakpoint($tablet) {
 			font-size: 18px;
