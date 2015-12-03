@@ -80,7 +80,7 @@ gulp.task('html', ['styles', 'scripts', 'partials'], function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src('src/images/*')
+  return gulp.src(['src/images/*', 'src/images/**/*'])
   /**
     .pipe($.cache($.imagemin({
       optimizationLevel: 3,
