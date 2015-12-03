@@ -742,7 +742,6 @@ $mq-breakpoints: (
 }
 
 .profile-block{
-	max-width: 965px;
 	padding: 58px 0 0;
 
 	@include breakpoint($mobile) {
@@ -750,6 +749,11 @@ $mq-breakpoints: (
 	}
 
 	&.columns{
+    display: flex;
+    align-content: flex-start;
+    flex-flow: row wrap;
+    align: center;
+
 		margin: 0 -20px 0 0;
 
 		@include breakpoint($mobile) {
@@ -758,8 +762,10 @@ $mq-breakpoints: (
 	}
 
 	.column{
+    flex: 1 1 default;
+
 		width: 25%;
-		padding: 0 32px 20px 0;
+		padding-bottom: 20px;
 		text-align: center;
 
 		@include breakpoint($mobile) {
@@ -768,6 +774,9 @@ $mq-breakpoints: (
 		}
 	}
 
+  .role {
+    font-size: 80%;
+  }
 	.name{
 		font: 600 25px/30px $base-font-family;
 
@@ -782,16 +791,14 @@ $mq-breakpoints: (
 		}
 	}
 
-	img{
-		margin: 0 0 31px;
-
-		@include breakpoint($mobile) {
-			margin: 0 auto 10px;
-			display: block;
-		}
+	img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    max-width: initial;
 	}
 
-	a{
+	a {
 		color: #fff;
 
 		&:hover{

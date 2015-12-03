@@ -1,3 +1,11 @@
+mixin member(name, role, nick)
+  .column
+    img(src='images/team/' + nick + '.png', alt=name, width='209', height='209')
+    a(href='#')
+      strong.name= name
+      br
+      span.role= role
+
 doctype html
 html
   head
@@ -186,39 +194,42 @@ html
                 h3 Ionic
                 p
                   | Avec la sortie de Ionic, framework de développement mobile basé sur Angular et HTML5, il est maintenant possible de développer des applications mobiles multi-plateformes sur des fondations 100% open-source.
+
           section#about-us.block.qui-sommes-block
             h2 Qui sommes-nous ?
             .columns.profile-block
-              .column
-                a(href='#')
-                  img(src='images/img18.jpg', alt='Baptiste Michel', width='209', height='209')
-                a(href='#')
-                  strong.name Baptiste Michel
-              .column
-                a(href='#')
-                  img(src='images/img19.jpg', alt='Baptiste Michel', width='209', height='209')
-                a(href='#')
-                  strong.name Baptiste Michel
-              .column
-                a(href='#')
-                  img(src='images/img20.jpg', alt='Marek Kalnik', width='209', height='209')
-                a(href='#')
-                  strong.name Marek Kalnik
-              .column
-                a(href='#')
-                  img(src='images/img21.jpg', alt='Marek Kalnik', width='209', height='209')
-                a(href='#')
-                  strong.name Marek Kalnik
+              +member('Adrien Jezegou', 'Développeur', 'adrienj')
+              +member('Alexandre Moureaux', 'Développeur', 'alexandrem')
+              +member('Baptiste Michel', 'CEO', 'baptistem')
+              +member('Benjamin Michel', 'Développeur', 'benjaminm')
+              +member('Caroline Besnard', 'Développeur UX', 'carolineb')
+              +member('Clément David', 'Business Développeur', 'clementd')
+              +member('Eliot Andres', 'Développeur', 'eliota')
+              +member('Emile Mathieu', 'Développeur', 'emilem')
+              +member('Florian Rival', 'Développeur', 'florianr')
+              +member('Guillaume Diallo-Mulliez', 'Développeur', 'guillaumedm')
+              +member('Géraldine Carré', 'Office Manager', 'geraldinec')
+              +member('Kinga Szylagyi', 'Architecte', 'kingas')
+              +member('Marek Kalnik', 'CTO', 'marekk')
+              +member('Nicolas Djambazian', 'Développeur', 'nicolasd')
+              +member('Nicolas Schweisguth', 'Business Développeur', 'nicolass')
+              +member('Tiago Ferreira', 'Développeur', 'tiagof')
+              +member('Yann Leflour', 'Développeur', 'yannl')
+              +member('Yannick Tian', 'Développeur', 'yannickt')
+
     #footer.row
       .container
         | © BAM 2015 :
-        a(href='mailto:contact@bamlab.fr') contact@bamlab.fr
+        a(href='mailto:contact@bamlab.fr')
+          |  contact@bamlab.fr
         | ,
-        a(href='https://twitter.com/bam_lab') @bam_lab
+        a(href='https://twitter.com/bam_lab')
+          |  @bam_lab
         | .
         br
         | Graphics by
-        a(href='http://voila-infographics.com/') Voilà Infographics
+        a(href='http://voila-infographics.com/')
+          |  Voilà Infographics
       script.
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
