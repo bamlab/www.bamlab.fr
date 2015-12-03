@@ -1,0 +1,264 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title BAM - développement mobile multiplateforme.
+    meta(name='description', content='Nous créons des applications mobiles multiplateformes et se basant sur les méthodologies LEAN et Agiles.')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700', rel='stylesheet')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    // build:css({.tmp,src}) styles/app.css
+    link(media='all', rel='stylesheet', href='app/css/all.css')
+    // bower:css
+    link(rel='stylesheet', href='bower_components/ng-table/ng-table.css')
+    // endbower
+    // endbuild
+  body(ng-app='homepage')
+    #wrapper
+      header#header
+        .container
+          .logo
+            a(href='#')
+              img(src='images/logo.png', alt='BAM', width='386', height='129')
+          strong.slogan Think business, not device
+          nav#nav
+            a.opener(href='#')
+              span Menu
+            .drop
+              ul
+                li
+                  a(href='#our-expertise') Notre metier
+                li
+                  a(href='#contact') Contactez-nous
+                li
+                  a(href='#mobile-economy') L'economie des applications
+                li
+                  a(href='#methodology') Notre methodologie
+                li
+                  a(href='#tools') Nos technologies
+                li
+                  a(href='#about-us') Qui sommes nous ?
+                li
+                  a(href='http://blog.bamlab.fr') Notre blog
+      main(role='main')
+        .intro
+          .container(style='background-image:url(images/banner.jpg); background-size: contain; max-width:1664px; background-position: 50% 50%; background-repeat: no-repeat;')
+            h1
+              | Nous produisons
+              br
+              |  des applications mobiles
+              br
+              |  multiplateformes
+        .container
+          section#our-expertise.block
+            h2 Développez une application opérationnelle sur tous les appareils mobiles
+            .columns.operating-system
+              .column
+                .logo-holder
+                  img(src='images/img22.png', alt='IOS', width='89', height='111')
+                strong.title ios
+              .column
+                .logo-holder
+                  img(src='images/img23.png', alt='android', width='119', height='141')
+                strong.title.android android
+              .column
+                .logo-holder
+                  img(src='images/img24.png', alt='windows', width='119', height='141')
+                strong.title.windows windows
+            .columns
+              .column
+                img(src='images/img1.jpg', alt='image description', width='348', height='336')
+                h3
+                  | Développement
+                  br
+                  |  multiplateforme
+                p
+                  | Nous maitrisons la méthode et les technologies qui permettent de s'affranchir des contraintes des terminaux mobiles pour fournir aux utilisateurs des applications accessibles depuis tous les appareils.
+              .column
+                img(src='images/img2.jpg', alt='image description', width='348', height='336')
+                h3
+                  | Méthodologie
+                  br
+                  |  Scrum
+                p
+                  | Nous vous incluons dans une équipe BAM dédiée. Nous priorisons et évaluons ensemble les fonctionnalités clés et vous validez la progression des développements jour après jour. Dès le premier jour des résultats mesurables apparaissent.
+              .column
+                img(src='images/img3.jpg', alt='image description', width='348', height='336')
+                h3
+                  | Priorisation
+                  br
+                  |  business
+                p
+                  | Nous identifions avec vous les indicateurs de succès du projet. Les développements sont priorisés pour produire une version de l'application qui permette de collecter le maximum d'enseignements auprès de vos utilisateurs.
+          aside#contact.block.contact-block
+            h2 Contactez-nous !
+            .row(ng-controller='MainCtrl as main')
+              .size-adapt.columns
+                form.contact-form(name='form', ng-submit='sendContactForm()', novalidate='')
+                  fieldset
+                    .row
+                      .row.row-form
+                        .columns.column-name.first-name
+                          input#first-name.radius(ng-model='formData.first_name', type='text', placeholder='Prénom')
+                        .columns.column-name
+                          input#last-name.radius(ng-model='formData.last_name', type='text', placeholder='Nom')
+                      .row.row-form
+                        .columns.full-column
+                          input#email.radius(type='email', ng-model='formData.email', placeholder='Email', required='')
+                      .row.row-form
+                        .columns.full-column
+                          input#phone.radius(type='tel', ng-model='formData.phone', placeholder='No. tél')
+                      .row.row-form
+                        .columns
+                          textarea#message.radius(ng-model='formData.message', placeholder='Votre projet ?')
+                      .row
+                        .columns
+                          button.radius.button.button-form(type='submit', ng-disabled='!formData.email && !formData.phone') Envoyer
+              .size-adapt.padding-map.columns.show-for-medium-up
+                iframe(frameborder='0', style='border:0', width='549', height='356', allowfullscreen='', src='https://www.google.com/maps/embed/v1/place?q=48+Boulevard+des+Batignolles,+Paris,+France&key=AIzaSyATt42KU_QW4oejicTt6L6qqMmKSeFrMeg')
+          section#mobile-economy.block.service-block
+            .columns
+              .column
+                img(src='images/img4.jpg', alt='image description', width='535', height='336')
+                h3 Les applications mobiles sont partout et elles changent tout.
+                p
+                  | L’économie des applications révolutionne notre manière de travailler. BAM produit des applications mobiles pour résoudre les nouvelles problématiques de mobilité en entreprise. Tous les secteurs profitent des applications mobiles pour améliorer l'expérience client, et renforcer leur productivité.
+              .column
+                img(src='images/img5.jpg', alt='image description', width='535', height='336')
+                h3 Le traffic sur appareils mobiles est supérieur au desktop.
+                p
+                  | En septembre 2014 le traffic mobile a depassé celui du desktop. Les devices mobiles deviennent le moyen principal d'utilisation des sites web.
+              .column
+                img(src='images/img6.jpg', alt='image description', width='535', height='336')
+                h3 La vitesse : le facteur clé de succès dans l’économie des applications
+                p
+                  | La vitesse est le facteur clé de succès dans l’économie des applications où les attentes des utilisateurs et l’environnement business évoluent en permanence.
+                p
+                  | Etre capable de produire des applications fiables vite suppose d’adopter un processus agile où la conception, le développement et les tests sont intégré dans un même processus.
+              .column
+                img(src='images/img7.jpg', alt='image description', width='535', height='336')
+                h3 Les utilisateurs mobiles utilisent des device variés
+                p 120000 modèles différents de smartphones et tablettes disponibles en 2013
+                p 250 tailles d'écran différentes
+          section#methodology.block.adopter-block
+            h2 Adopter une démarche Scrum et Lean pour aller vite
+            .columns
+              .column
+                img(src='images/img8.jpg', alt='image description', width='348', height='336')
+                h3 Porteur du projet
+                p
+                  | En tant que porteur du projet, vous êtes intégrée à l'équipe BAM. Vous lui transmettez votre vision en priorisant et validant les fonctionnalités à développer. L'équipe se réunit chaque semaine pour planifier les développements.
+              .column
+                img(src='images/img9.jpg', alt='image description', width='348', height='336')
+                h3 L’équipe technique
+                p
+                  | L’équipe technique composée de 2 à 3 développeurs BAM est en charge de la réussite du projet. Elle échange au quotidien avec le directeur produit pour livrer des fonctionnalités à forte valeur ajoutée business.
+              .column
+                img(src='images/img10.jpg', alt='image description', width='348', height='336')
+                h3 Le coach agile
+                p
+                  | Le coach agile BAM adapte la méthodologie au contexte du projet. Il apporte un focus très fort sur la définition et le suivi des indicateurs de succès du projet.
+          section#tools.block.capitaliser-block
+            h2
+              | Capitaliser sur les technologies web pour développer des applications cross plateformes
+            .columns
+              .column
+                .logo-holder
+                  img(src='images/img11.png', alt='angular js by google', width='340', height='89')
+                h3 Angular
+                p
+                  | Angular est le framework JavaScript leader. Soutenu par Google il permet de capitaliser sur des briques logicielles déjà créées pour des développements d’applications plus rapides et pérennes.
+              .column
+                .logo-holder
+                  img(src='images/cordova.png', alt='cordova', width='340', height='150')
+                h3 Apache Cordova
+                p
+                  | Apache Cordova (aussi appelé Phonegap) est une plateforme qui permet de développer des applications mobiles natives pour Android, iOS, Windows Phone…en HTML, CSS et JavaSript. La BBC, Decathlon, Wikipedia et des startups comme Healthtap ont déjà adopté cette solution.
+              .column
+                .logo-holder
+                  img(src='images/img12.png', alt='html5 et css3', width='285', height='148')
+                h3 HTML5 et CSS3
+                p
+                  | HTML5/CSS3 permet aux développeurs web de produire des applications mobile utilisant les fonctionnalités avancées de votre téléphone comme la géolocalisation, la navigation offline et le drag and drop. Le HTML5 est prêt pour développer des applications mobiles performantes cross-plateformes.
+              .column
+                .logo-holder
+                  img(src='images/img13.png', alt='ionic', width='285', height='112')
+                h3 Ionic
+                p
+                  | Avec la sortie de Ionic, framework de développement mobile basé sur Angular et HTML5, il est maintenant possible de développer des applications mobiles multi-plateformes sur des fondations 100% open-source.
+          section#about-us.block.qui-sommes-block
+            h2 Qui sommes-nous ?
+            .columns.profile-block
+              .column
+                a(href='#')
+                  img(src='images/img18.jpg', alt='Baptiste Michel', width='209', height='209')
+                a(href='#')
+                  strong.name Baptiste Michel
+              .column
+                a(href='#')
+                  img(src='images/img19.jpg', alt='Baptiste Michel', width='209', height='209')
+                a(href='#')
+                  strong.name Baptiste Michel
+              .column
+                a(href='#')
+                  img(src='images/img20.jpg', alt='Marek Kalnik', width='209', height='209')
+                a(href='#')
+                  strong.name Marek Kalnik
+              .column
+                a(href='#')
+                  img(src='images/img21.jpg', alt='Marek Kalnik', width='209', height='209')
+                a(href='#')
+                  strong.name Marek Kalnik
+    #footer.row
+      .container
+        | © BAM 2015 :
+        a(href='mailto:contact@bamlab.fr') contact@bamlab.fr
+        | ,
+        a(href='https://twitter.com/bam_lab') @bam_lab
+        | .
+        br
+        | Graphics by
+        a(href='http://voila-infographics.com/') Voilà Infographics
+      script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-56198126-1', 'auto');
+        ga('send', 'pageview');
+
+      // build:js scripts/vendor.js
+      // bower:js
+      script(src='bower_components/jquery/dist/jquery.js')
+      script(src='bower_components/modernizr/modernizr.js')
+      script(src='bower_components/angular/angular.js')
+      script(src='bower_components/angular-animate/angular-animate.js')
+      script(src='bower_components/angular-cookies/angular-cookies.js')
+      script(src='bower_components/angular-touch/angular-touch.js')
+      script(src='bower_components/angular-sanitize/angular-sanitize.js')
+      script(src='bower_components/lodash/dist/lodash.compat.js')
+      script(src='bower_components/restangular/dist/restangular.js')
+      script(src='bower_components/angular-ui-router/release/angular-ui-router.js')
+      script(src='bower_components/fastclick/lib/fastclick.js')
+      script(src='bower_components/jquery.cookie/jquery.cookie.js')
+      script(src='bower_components/jquery-placeholder/jquery.placeholder.js')
+      script(src='bower_components/ng-table/ng-table.js')
+      script(src='bower_components/devtools-detect/devtools-detect.js')
+      // endbower
+      // endbuild
+      // build:js({src,.tmp}) scripts/main.js
+      script(src='app/js/jquery-1.11.2.min.js')
+      script(src='app/js/jquery.main.js')
+      script(src='app/lib/konami.js')
+      script(src='app/effects/effects.js')
+      script(src='app/effects/effects.directive.js')
+      script(src='app/homepage.js')
+      script(src='app/main/main.controller.js')
+      script(src='app/main/magellan.directive.js')
+      script(src='app/expertise/expertise.controller.js')
+      script(src='app/performance/performance.controller.js')
+      script(src='components/navbar/navbar.controller.js')
+      // inject:partials
+      // angular templates will be automaticaly converted in js and inserted here
+      // endinject
+      // endbuild
