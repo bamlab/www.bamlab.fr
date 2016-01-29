@@ -1,7 +1,7 @@
 "use strict";
 
 angular.module('homepage')
-  .directive('trackMenu', ['$parse', function($parse) {
+  .directive('trackMenu', [function() {
     return {
       restrict: 'A',
       link: function (scope, element, attrs) {
