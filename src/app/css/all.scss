@@ -10,10 +10,13 @@ $mq-breakpoints: (
     mobileLandscape: 480px
 );
 
+$bam-blue: #2a7fff;
+
 // Show active breakpoint in top right corner of viewport
 // $mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, widescreen, tvscreen);
 
 @import "mq";
+@import "gh-fork-ribbon";
 @import "base/markup-variables";
 @import "base/markup-mixins";
 @import "base/base-reset";
@@ -126,7 +129,7 @@ $mq-breakpoints: (
 	width:45px;
 	height:45px;
 	background:#000;
-	background:#2a7fff;
+	background:$bam-blue;
 	position:relative;
 	border-radius:3px;
 	text-indent:-9999px;
@@ -420,7 +423,7 @@ $mq-breakpoints: (
 	}
 
 	.android{
-		color: #2a7fff;
+		color: $bam-blue;
 	}
 
 	.windows{
@@ -604,7 +607,7 @@ $mq-breakpoints: (
 		right: -9999px;
 		top: 0;
 		bottom: 0;
-		background: #2a7fff;
+		background: $bam-blue;
 		z-index: -1;
 	}
 
@@ -739,6 +742,57 @@ $mq-breakpoints: (
 	p{
 		margin: 0 0 27px;
 	}
+}
+
+.join-us-block {
+	padding: 58px 0 0;
+    position: relative;
+	color: #fff;
+	margin: 0;
+    text-align: center;
+
+	&:before{
+		content: '';
+		position: absolute;
+		left: -9999px;
+		right: -9999px;
+		top: 0;
+		bottom: 0;
+		background: #FAB613;
+		z-index: -1;
+	}
+
+    h1 {
+        overflow: hidden;
+        text-align: center;
+    }
+
+    a {
+        background-color: $bam-blue;
+    }
+
+    h2:before,
+    h2:after {
+        background-color: #fbfbfb;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        position: relative;
+        vertical-align: middle;
+        width: 42%;
+    }
+    h2:before {
+        right: 0.5em;
+        margin-left: -42%;
+    }
+    h2:after {
+        left: 0.5em;
+        margin-right: -42%;
+    }
+
+    .button {
+        margin: 20px;
+    }
 }
 
 .profile-block{
