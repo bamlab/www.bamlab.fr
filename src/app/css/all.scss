@@ -741,6 +741,53 @@ $mq-breakpoints: (
 	}
 }
 
+.join-us-block {
+	padding: 58px 0 0;
+    position: relative;
+	color: #fff;
+	margin: 0;
+    text-align: center;
+
+	&:before{
+		content: '';
+		position: absolute;
+		left: -9999px;
+		right: -9999px;
+		top: 0;
+		bottom: 0;
+		background: #FAB613;
+		z-index: -1;
+	}
+    
+    h1 {
+        overflow: hidden;
+        text-align: center;
+    }
+
+    h2:before,
+    h2:after {
+        background-color: #fbfbfb;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        position: relative;
+        vertical-align: middle;
+        width: 42%;
+    }
+    h2:before {
+        right: 0.5em;
+        margin-left: -42%;
+    }
+    h2:after {
+        left: 0.5em;
+        margin-right: -42%;
+    }
+
+    .button {
+        margin: 20px;
+    }
+}
+
 .profile-block{
 	padding: 58px 0 0;
 
