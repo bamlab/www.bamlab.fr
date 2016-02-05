@@ -10,6 +10,8 @@ $mq-breakpoints: (
     mobileLandscape: 480px
 );
 
+$bam-blue: #2a7fff;
+
 // Show active breakpoint in top right corner of viewport
 // $mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, widescreen, tvscreen);
 
@@ -126,7 +128,7 @@ $mq-breakpoints: (
 	width:45px;
 	height:45px;
 	background:#000;
-	background:#2a7fff;
+	background:$bam-blue;
 	position:relative;
 	border-radius:3px;
 	text-indent:-9999px;
@@ -420,7 +422,7 @@ $mq-breakpoints: (
 	}
 
 	.android{
-		color: #2a7fff;
+		color: $bam-blue;
 	}
 
 	.windows{
@@ -604,7 +606,7 @@ $mq-breakpoints: (
 		right: -9999px;
 		top: 0;
 		bottom: 0;
-		background: #2a7fff;
+		background: $bam-blue;
 		z-index: -1;
 	}
 
@@ -758,10 +760,14 @@ $mq-breakpoints: (
 		background: #FAB613;
 		z-index: -1;
 	}
-    
+
     h1 {
         overflow: hidden;
         text-align: center;
+    }
+
+    a {
+        background-color: $bam-blue;
     }
 
     h2:before,
