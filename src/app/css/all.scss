@@ -891,3 +891,13 @@ $menu-blue: #1c3586;
   font-size: 12px;
   padding-bottom: 10px
 }
+
+
+.disable-events {
+	pointer-events: none;
+	@include breakpoint($tablet) {
+		pointer-events: auto;
+	}
+}
+
+

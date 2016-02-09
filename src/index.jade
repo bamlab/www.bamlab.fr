@@ -128,8 +128,9 @@ html
                       .row
                         .columns
                           button.radius.button.button-form(type='submit', ng-disabled='!formData.email && !formData.phone') Envoyer
-              .size-adapt.padding-map.columns.show-for-medium-up
-                iframe(frameborder='0', style='border:0', width='549', height='356', allowfullscreen='', src='https://www.google.com/maps/embed/v1/place?q=48+Boulevard+des+Batignolles,+Paris,+France&key=AIzaSyATt42KU_QW4oejicTt6L6qqMmKSeFrMeg')
+              .size-adapt.padding-map.columns.show-for-medium-up(ng-click="mapScrollDisabled=false")
+                iframe( frameborder='0', style='border:0', width='520', height='356', allowfullscreen='', src='https://www.google.com/maps/embed/v1/place?q=48+Boulevard+des+Batignolles,+Paris,+France&key=AIzaSyATt42KU_QW4oejicTt6L6qqMmKSeFrMeg', 
+                        ng-mouseleave="mapScrollDisabled=true",  ng-init="mapScrollDisabled=true", ng-class="{'disable-events': mapScrollDisabled}") 
           section#mobile-economy.block.service-block
             .columns
               .column
