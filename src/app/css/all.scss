@@ -89,6 +89,7 @@ $bam-blue: #2a7fff;
   background: white;
 
   @include breakpoint($tablet) {
+    padding: 10px;
     position: fixed;
     margin-left: 0px;
     width: 100%;
