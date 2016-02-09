@@ -1,10 +1,9 @@
 mixin member(name, role, nick)
   .column
     img(src='images/team/' + nick + '.png', alt=name, width='209', height='209')
-    a(href='#')
-      strong.name= name
-      br
-      span.role= role
+    strong.name= name
+    br
+    span.role= role
 
 doctype html
 html
@@ -49,7 +48,7 @@ html
             a(href='#')
               img(src='images/logo.png', alt='BAM', width='386', height='129')
           strong.slogan Think business, not device
-          
+
       div.github-fork-ribbon-wrapper.right
         div.github-fork-ribbon
           a(href="#join-us") On recrute!
