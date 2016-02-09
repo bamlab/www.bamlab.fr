@@ -50,15 +50,6 @@ $menu-blue: #1c3586;
 		}
 	}
 
-	.logo{
-		margin: 50px 0 0 0;
-
-		@include breakpoint($mobile) {
-			max-width: 260px;
-			margin: 0 auto 10px;
-		}
-	}
-
 	.slogan{
 		font: 600 25px/30px $base-font-family;
 		text-transform: uppercase;
@@ -80,15 +71,15 @@ $menu-blue: #1c3586;
 
 #nav{
 	position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 
-  width: 100%;
-  border-bottom: 1px solid $menu-blue;
-  padding: 10px 20px 10px 40px;
-  text-align: center;
-  background: white;
+    width: 100%;
+    border-bottom: 1px solid $menu-blue;
+    padding: 0 5px 0 5px;
+    text-align: center;
+    background: $menu-blue;
 
   @include breakpoint($tablet) {
     padding: 10px;
@@ -101,7 +92,7 @@ $menu-blue: #1c3586;
 
 	ul{
 		@extend %listreset;
-		font: 600 21px/26px $base-font-family;
+		font: 600 15px/16px $base-font-family;
 
 		@include breakpoint($tablet) {
 			font-size: 18px;
@@ -112,7 +103,6 @@ $menu-blue: #1c3586;
 	li{
 		display: inline-block;
 		vertical-align: top;
-		padding: 15px 15px;
 
 		@include breakpoint($tablet) {
 			display: block;
@@ -122,21 +112,28 @@ $menu-blue: #1c3586;
 
 		&.active{
 			a{
-				color: $light-blue;
-				font-weight: 700;
+				background-color: $bam-blue;
+                color: white;
+				font-weight: 500;
 			}
+		}
+
+		&:hover{
+			background-color: white;
+            color: $menu-blue;
 		}
 	}
 
 	a{
-		color: $menu-blue;
+		color: white;
 		display: inline-block;
 		vertical-align: top;
+		padding: 25px 5px;
 
 		&:hover{
 			text-decoration: none;
-			color: $light-blue;
-		}
+            color: $menu-blue;
+        }
 	}
 }
 
@@ -204,6 +201,10 @@ $menu-blue: #1c3586;
         border-bottom: transparent;
     }
 
+    #nav a {
+        color: $menu-blue;
+    }
+
 	#nav .opener{
 		display:block;
 	}
@@ -245,8 +246,8 @@ $menu-blue: #1c3586;
 	background: #1c3586;
 	margin: 0 0 115px;
 	color: #fff;
-  background-size: cover;
-  padding-bottom: 30px;
+    background-size: cover;
+    height: 100vh;
 
 
 	@include breakpoint($tablet) {
@@ -257,8 +258,23 @@ $menu-blue: #1c3586;
 		margin: 0 0 60px;
 	}
 
+	.logo{
+		text-align: center;
+
+		@include breakpoint($mobile) {
+			max-width: 260px;
+			margin: 0 auto 10px;
+		}
+	}
+
 	.container{
-		padding: 250px 0;
+        background-size: contain;
+        max-width:1664px;
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+		padding: 150px 0;
 
 		@include breakpoint($tablet) {
 			padding: 150px 0;
@@ -268,7 +284,11 @@ $menu-blue: #1c3586;
 	h1{
 		font: 600 58px/68px $base-font-family;
 		text-align: center;
-		margin: 0 0 16px;
+        background-color: rgba(255, 255, 255, 0.88);
+        margin-top: 33px;
+        color: #1C3587;
+        padding: 16px;
+        text-shadow: 1px 1px white;
 
 		@include breakpoint($tablet) {
 			font-size: 50px;

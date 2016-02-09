@@ -44,11 +44,6 @@ html
                 a(href='#about-us', track-menu) Qui sommes-nous ?
               li
                 a(href='http://blog.bamlab.fr', track-menu) Notre blog
-        .container
-          .logo
-            a(href='#')
-              img(src='images/logo.png', alt='BAM', width='386', height='129')
-          strong.slogan Think business, not device
           
       div.github-fork-ribbon-wrapper.right
         div.github-fork-ribbon
@@ -56,7 +51,10 @@ html
 
       main(role='main')
         .intro
-          .container(style='background-image:url(images/banner.jpg); background-size: contain; max-width:1664px; background-position: 50% 50%; background-repeat: no-repeat;')
+          .container(style='background-image:url(images/banner.jpg);')
+            .logo
+              a(href='#')
+                img(src='images/logo.png', alt='BAM', width='386', height='129')
             h1
               | Nous produisons
               br
