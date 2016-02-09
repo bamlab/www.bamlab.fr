@@ -50,7 +50,7 @@ $bam-blue: #2a7fff;
 	}
 
 	.logo{
-		margin: 0 0 19px;
+		margin: 50px 0 0 0;
 
 		@include breakpoint($mobile) {
 			max-width: 260px;
@@ -63,7 +63,7 @@ $bam-blue: #2a7fff;
 		text-transform: uppercase;
 		color: #929497;
 		display: block;
-		margin: 0 0 105px;
+		margin: 0 0 60px;
 
 		@include breakpoint($tablet) {
 			margin: 0 0 50px;
@@ -78,7 +78,23 @@ $bam-blue: #2a7fff;
 }
 
 #nav{
-	position: relative;
+	position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  margin-left: -20px;
+  padding: 10px;
+  text-align: center;
+  background: white;
+
+  @include breakpoint($tablet) {
+    position: fixed;
+    margin-left: 0px;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+  }
 
 	ul{
 		@extend %listreset;
@@ -134,7 +150,7 @@ $bam-blue: #2a7fff;
 	border-radius:3px;
 	text-indent:-9999px;
 	overflow:hidden;
-	margin: 0 auto;
+	margin: 0 10px 0 0;
 }
 
 .opener:before,
@@ -200,7 +216,7 @@ $bam-blue: #2a7fff;
 	}
 
 	#nav .drop > ul{
-		border:1px solid #000;
+		border:1px solid $bam-blue;
 		background:#fff;
 		padding: 10px;
 	}
@@ -235,7 +251,7 @@ $bam-blue: #2a7fff;
 	}
 
 	.container{
-		padding: 200px 0;
+		padding: 250px 0;
 
 		@include breakpoint($tablet) {
 			padding: 150px 0;
@@ -746,10 +762,10 @@ $bam-blue: #2a7fff;
 
 .join-us-block {
 	padding: 58px 0 0;
-    position: relative;
+  position: relative;
 	color: #fff;
 	margin: 0;
-    text-align: center;
+  text-align: center;
 
 	&:before{
 		content: '';

@@ -24,35 +24,36 @@ html
   body(ng-app='homepage')
     #wrapper
 
-      div.github-fork-ribbon-wrapper.right
-        div.github-fork-ribbon
-          a(href="#join-us") On recrute!
-
       header#header
+        nav#nav
+          a.opener(href='#')
+            span Menu
+          .drop
+            ul
+              li
+                a(href='#our-expertise', track-menu) Notre métier
+              li
+                a(href='#contact', track-menu) Contactez-nous
+              li
+                a(href='#mobile-economy', track-menu) L'économie des applications
+              li
+                a(href='#methodology', track-menu) Notre méthodologie
+              li
+                a(href='#tools', track-menu) Nos technologies
+              li
+                a(href='#about-us', track-menu) Qui sommes-nous ?
+              li
+                a(href='http://blog.bamlab.fr', track-menu) Notre blog
         .container
           .logo
             a(href='#')
               img(src='images/logo.png', alt='BAM', width='386', height='129')
           strong.slogan Think business, not device
-          nav#nav
-            a.opener(href='#')
-              span Menu
-            .drop
-              ul
-                li
-                  a(href='#our-expertise', track-menu) Notre métier
-                li
-                  a(href='#contact', track-menu) Contactez-nous
-                li
-                  a(href='#mobile-economy', track-menu) L'économie des applications
-                li
-                  a(href='#methodology', track-menu) Notre méthodologie
-                li
-                  a(href='#tools', track-menu) Nos technologies
-                li
-                  a(href='#about-us', track-menu) Qui sommes-nous ?
-                li
-                  a(href='http://blog.bamlab.fr', track-menu) Notre blog
+          
+      div.github-fork-ribbon-wrapper.right
+        div.github-fork-ribbon
+          a(href="#join-us") On recrute!
+
       main(role='main')
         .intro
           .container(style='background-image:url(images/banner.jpg); background-size: contain; max-width:1664px; background-position: 50% 50%; background-repeat: no-repeat;')
