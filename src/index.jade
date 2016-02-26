@@ -5,13 +5,29 @@ mixin member(name, role, nick)
     br
     span.role= role
 
+mixin seoTags
+  - var siteTitle = 'BAM - développement mobile multiplateforme.'
+  - var siteDescription = 'Nous créons des applications mobiles multiplateformes et se basant sur les méthodologies LEAN et Agiles.';
+  - var siteLogo = 'http://www.bamlab.fr/images/logo_seo.png'
+  - var siteUrl = 'http://www.bamlab.fr'
+
+  title= siteTitle
+  meta(name='description', content=siteDescription)
+  meta(property='og:title', content=siteTitle)
+  meta(property='og:description', content=siteDescription)
+  meta(property='og:image', content=siteLogo)
+  meta(property='og:url', content=siteUrl)
+  meta(property='twitter:card', content='summary')
+  meta(property='twitter:site', content='@bam_lab')
+
 doctype html
 html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title BAM - développement mobile multiplateforme.
-    meta(name='description', content='Nous créons des applications mobiles multiplateformes et se basant sur les méthodologies LEAN et Agiles.')
+
+    +seoTags
+
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700', rel='stylesheet')
     // Place favicon.ico and apple-touch-icon.png in the root directory
     // build:css({.tmp,src}) styles/app.css
