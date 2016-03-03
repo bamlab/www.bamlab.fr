@@ -616,6 +616,23 @@ $menu-blue: #1c3586;
 	}
 }
 
+.references-block {
+  text-align: center;
+
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  .row {
+    margin-top: 40px;
+  }
+
+  img {
+    vertical-align: middle;
+    margin: 0 20px 0 20px;
+  }
+}
+
 .qui-sommes-block{
 	position: relative;
 	padding: 39px 0 24px;
@@ -899,5 +916,3 @@ $menu-blue: #1c3586;
 		pointer-events: auto;
 	}
 }
-
-
